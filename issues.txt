@@ -1,0 +1,19 @@
+index.html
+
+- dropdown menu - active shopping cart ico inside
+- cart - cart logics
+- logo - find font without descenders
+- gallery - gallery logics
+- clients - clients logics
+
+shop.html
+
+workshop.html
+
+faq.html
+
+contacts.html
+
+cart.html
+
+404.html
