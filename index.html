@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <img src="img/ico-sample.svg" class="svg">
+          <img src="img/ico-sample.svg" onclick="dropdownClick()" class="svg dropdown-btn">
+          <div id="dropdown-menu" class="dropdown-content">
+            <a href="#">главная</a>
+            <a href="#">магазин</a>
+            <a href="#">мастерская</a>
+            <a href="#">услуги</a>
+            <a href="#">контакты</a>
+            <a href="#">корзина</a><img src="img/ico-sample.svg">
+          </div>
         </div>
         <div class="breadcrumb">
           <p>ГЛАВНАЯ</p>
@@ -83,7 +92,7 @@
         </ul>
       </div>
       <div class="main-offer">
-        <h1>ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ МИМО КОТОРОГО НЕ ПРОЙТИ</h1>
+        <h1>ТУТ САМОЕ ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ МИМО КОТОРОГО НЕ ПРОЙТИ</h1>
         <img src="img/600x600.jpg">
         <form>
           <input>
@@ -96,14 +105,16 @@
         <div class="shop-link"></div>
         <div class="workshop-link"></div>
       </div>
-      <div class="about">
-        <img>
+      <div class="about section">
+        <h3>WHO IS MR.BADGER</h3>
+        <img src="img/600x600.jpg">
         <p>onebadger - это мастерская и магазин изделий из натурального дерева. Мы создаем: домашний и офисный декор, свадебный декор, фотореквизит, аксессуары для флористики.</p>
       </div>
       <div class="questions section">
       </div>
     </div>
     <footer>
+      <hr>
       <div class="social-icons"></div>
       <div class="nav-footer"></div>
       <div class="footer-contacts">
@@ -114,5 +125,6 @@
       <div class="copyright">badger.one 2017 c копирование и публикация со сылкой на badger.one</div>
       <div class="developer">дизайн и разработка onebadger</div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
