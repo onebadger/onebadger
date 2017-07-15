@@ -1,0 +1,143 @@
+/********** GENERAL RULES **********/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #111;
+  font-family: ;
+  font-weight: ;
+  
+  padding-top: 47px;
+}
+
+a {
+  text-decoration: none;
+  color: ;
+}
+
+img {
+  max-width: 100%;
+}
+
+.js-media {
+  display: none; /* javascript mediaqueri breakpoint */
+}
+
+.svg {
+  display: block;
+}
+
+
+
+/********** COMMON RULES **********/
+
+.wrapper {
+  min-height: calc( - );
+}
+
+
+/********** NAV-TOP (fixed) **********/
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+  padding: 10px 20px;
+  background-color: lightcoral;
+}
+
+.breadcrumb,
+.phone-time {
+  display: none;
+}
+
+.cart img,
+.dropdown img {
+  width: 27px;
+  height: 27px;
+  
+}
+
+.phone p {
+  font-size:1.15em
+}
+
+
+
+/********** HEADER **********/
+
+
+
+/***** logo *****/
+
+.logo-box {
+  text-align: center;
+}
+
+.logo {
+  font-size: 3em
+}
+
+.logo-text {
+  margin-top: -5px;
+}
+
+
+/***** navigation *****/
+
+.nav-main {
+  display: none;
+}
+
+
+
+/***** dropdown button *****/
+
+
+
+/***** phone *****/
+
+
+
+/********** MAIN OFFER, SECOND OFFER **********/
+
+
+
+/********** PROFIT **********/
+
+
+
+/********** SERVICES **********/
+
+
+
+/********** CLIENTS **********/
+
+
+
+/********** CONTACTS **********/
+
+
+
+/********** FOOTER **********/
+
+
+
+/* 404 error */
+
+
+
+
+
+
+
+
+
