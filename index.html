@@ -15,23 +15,41 @@
         <div class="dropdown">
           <img src="img/ico-sample.svg" onclick="dropdownClick()" class="svg dropdown-btn">
           <div id="dropdown-menu" class="dropdown-content">
-            <a href="#">главная</a>
-            <a href="#">магазин</a>
-            <a href="#">мастерская</a>
-            <a href="#">услуги</a>
-            <a href="#">контакты</a>
-            <a href="#">корзина</a><img src="img/ico-sample.svg">
+            <a href="#">ГЛАВНАЯ</a>
+            <a href="#">МАГАЗИН</a>
+            <a href="#">МАСТЕРСКАЯ</a>
+            <a href="#">УСЛУГИ</a>
+            <a href="#">КОНТАКТЫ</a>
+            <a href="#">КОРЗИНА</a>
           </div>
         </div>
         <div class="breadcrumb">
           <p>ГЛАВНАЯ</p>
         </div>
         <div class="cart">
-          <img src="img/ico-sample.svg" class="svg">
+          <img src="img/ico-sample.svg" onclick="cartClick()" class="svg cart-btn">
+          <div id="dropdown-cart" class="cart-content">
+            <h4>Ваша корзина пуста</h4>
+            <table>
+              <tr>
+                <td>1.</td>
+                <td>Ширма декоративная</td>
+                <td>1 штука</td>
+                <td>26.000р.</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Ящик для пива из фанеры</td>
+                <td>20 штук</td>
+                <td>9.000р.</td>
+              </tr>
+            </table>
+            <h4>Оформить заказ</h4>
+          </div>
         </div>
         <div class="phone">
           <p class="phone-time">с 11:00 до 17:00</p>
-          <p class="phone-number"><a>8(926)9269699</a></p>
+          <p class="phone-number"><a href="tel:+79269269699">8(926)9269699</a></p>
         </div>
       </div> <!-- /.nav-top -->
       <div class="header">
