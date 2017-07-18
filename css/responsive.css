@@ -1,0 +1,20 @@
+@media (min-width: 400px) {
+
+  .dropdown {
+    flex-grow: 1;
+  }
+
+  .breadcrumb {
+    display: block;
+    flex-grow: 10;
+  }
+
+  .cart {
+    flex-grow: 5;
+  }
+
+  .phone {
+    flex-grow: 0;
+  }
+  
+}
