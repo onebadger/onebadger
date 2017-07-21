@@ -1,3 +1,11 @@
+/********** Web Fonts **********/
+
+@font-face {
+  font-family: 'Wolfganger';
+  src: url('../fonts/Wolfganger.otf');
+}
+
+
 /********** GENERAL RULES **********/
 
 * {
@@ -6,7 +14,7 @@
 
 body {
   color: #111;
-  font-family: ;
+  font-family: 'Roboto';
   font-weight: ;
   
   padding-top: 47px;
@@ -65,6 +73,10 @@ img {
   display: none;
 }
 
+.breadcrumb p {
+  font-size: 0.85em;
+}
+
 .cart img,
 .dropdown img {
   width: 27px;
@@ -111,7 +123,7 @@ img {
   cursor: pointer;
 }
 
-/** cart **/
+/***** cart *****/
 
 .cart-content {
   display: none;
@@ -135,18 +147,14 @@ img {
   display: block; /* app.js addClass to .dropdown-content onclick */
 }
 
-.show2 {
-  display: block; /* app.js addClass to .dropdown-content onclick */
-}
-
 /***** phone *****/
 
 .phone p {
-  font-size:1.15em
+  font-size:1.05em
 }
 
 
-/** items flex grow **/
+/***** flex grow items *****/
 
 
 .dropdown {
@@ -165,20 +173,22 @@ img {
 
 /********** HEADER **********/
 
-
-
 /***** logo *****/
 
 .logo-box {
   text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
 .logo {
-  font-size: 3em
+  font-family: 'Wolfganger';
+  font-size: 3.4em;
 }
 
 .logo-text {
-  margin-top: -5px;
+  margin-top: -13px;
+  letter-spacing: -0.6px;
 }
 
 
@@ -194,6 +204,14 @@ img {
 
 
 
+/********** CALL-ME FORM **********/
+
+.call-me {
+  margin-top: 20px;
+}
+
+
+
 /********** PROFIT **********/
 
 
@@ -203,9 +221,44 @@ img {
 .clients ul {
   list-style: none;
   padding-left: 0;
+  text-align: center;
 }
 
+.clients li img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/*before slider apply*/
+.clients li:nth-child(n+2) {
+  display: none;
+}
+
+
 /********** MAIN OFFER **********/
+
+
+
+/********** INTERNAL LINKS **********/
+
+.internal-links {
+  text-align: center;
+  margin-top: 20px
+}
+
+.link-header {
+  font-weight: 700;
+  font-size: 1.7em;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+/***** shop *****/
+
+/***** workshop *****/
 
 
 
@@ -219,6 +272,8 @@ img {
   border-radius: 50%;
   max-width: 200px;
 }
+
+
 
 /********** FOOTER **********/
 
