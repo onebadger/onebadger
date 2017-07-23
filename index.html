@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+<!--    <script src="js/galleryList.js"></script>-->
   </head>
   <body>
     <div class="wrapper">
@@ -71,7 +72,10 @@
         </div>
       </div>
       <div class="gallery">
-        <img src="img/600x600.jpg">
+        <img class="arrow arrow-left" src="img/arrow-left.svg">
+        <img class="arrow arrow-right" src="img/arrow-right.svg">
+        <img class="gallery-img">
+        <p class="gallery-text"></p>
       </div>
       <div class="call-me">
         <form action="#" method="post">
@@ -91,22 +95,22 @@
         <h3>КЛИЕНТЫ</h3>
         <ul>
           <li>
-            <img src="img/600x600.jpg">
+            <img src="img/600x600-1.jpg">
             <p>Работа очень понравилась! Хочется поблагодарить мастера и вообще сервис в целом! Большое спасибо! Получился прекрасный подарок друзьям. Деревянный ангелочек в коробочке с гравировкой
             </p>
           </li>
           <li>
-            <img src="img/600x600.jpg">
+            <img src="img/600x600-1.jpg">
             <p>Работа очень понравилась! Хочется поблагодарить мастера и вообще сервис в целом! Большое спасибо! Получился прекрасный подарок друзьям. Деревянный ангелочек в коробочке с гравировкой
             </p>
           </li>
           <li>
-            <img src="img/600x600.jpg">
+            <img src="img/600x600-1.jpg">
             <p>Работа очень понравилась! Хочется поблагодарить мастера и вообще сервис в целом! Большое спасибо! Получился прекрасный подарок друзьям. Деревянный ангелочек в коробочке с гравировкой
             </p>
           </li>
           <li>
-            <img src="img/600x600.jpg">
+            <img src="img/600x600-1.jpg">
             <p>Работа очень понравилась! Хочется поблагодарить мастера и вообще сервис в целом! Большое спасибо! Получился прекрасный подарок друзьям. Деревянный ангелочек в коробочке с гравировкой
             </p>
           </li>
@@ -114,27 +118,29 @@
       </div>
       <div class="main-offer">
         <h1>ТУТ САМОЕ ЛУЧШЕЕ ПРЕДЛОЖЕНИЕ МИМО КОТОРОГО НЕ ПРОЙТИ</h1>
-        <img src="img/600x600.jpg">
+        <img src="img/600x600-1.jpg">
         <form>
-          <input>
-          <input>
-          <input>
-          <button></button>
+          <input type="tel" id="phone1" name="user_phone1" pattern="[0-9]{10,11}" required placeholder="Ваш телефон*">
+          <input type="email" placeholder="Ваш e-mail">
+          <input type="text" placeholder="Ваше имя">
+          <button type="submit">ПОЛУЧИТЬ</button>
         </form>
       </div>
       <div class="internal-links">
         <div class="shop-link">
+          <img src="img/ico-sample.svg">
           <h3 class="link-header">ПРОДУКЦИЯ</h3>
           <p>это мастерская и магазин изделий из натурального дерева. Мы создаем: домашний и офисный декор, свадебный декор, фотореквизит, аксессуары для флористики.</p>
         </div>
         <div class="workshop-link">
+          <img src="img/ico-sample.svg">
           <h3 class="link-header">МАСТЕРСКАЯ</h3>
           <p>это мастерская и магазин изделий из натурального дерева. Мы создаем: домашний и офисный декор, свадебный декор, фотореквизит, аксессуары для флористики.</p>
         </div>
       </div>
       <div class="about section">
         <h3>WHO IS MR.BADGER</h3>
-        <img src="img/600x600.jpg">
+        <img src="img/600x600-1.jpg">
         <p>onebadger - это мастерская и магазин изделий из натурального дерева. Мы создаем: домашний и офисный декор, свадебный декор, фотореквизит, аксессуары для флористики.</p>
       </div>
       <div class="questions section">
@@ -152,6 +158,8 @@
       <div class="copyright">badger.one 2017 c копирование и публикация со сылкой на badger.one</div>
       <div class="developer">дизайн и разработка onebadger</div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    <script src="js/galleryList.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
