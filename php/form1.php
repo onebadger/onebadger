@@ -2,7 +2,7 @@
 
 if(isset($_POST['user_phone1'])) {
   $message = 'Phone: ' .$_POST['user_phone1'];
-  mail('on.badger@hmail.com', 'Call-me form', $message);
+  mail('on.badger@gmail.com', 'Call-me form', $message);
 } else {
   header('Refresh: 3; URL=index.html');
   exit(0);
@@ -13,21 +13,22 @@ if(isset($_POST['user_phone1'])) {
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="refresh" content="10;url=../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
     <title>Badger wood workshop</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Arsenal:400,700|Fira+Sans:400,500,700|Istok+Web:400,700|Open+Sans+Condensed:300,700|Roboto+Condensed:400,700|Roboto:400,500,700|Ubuntu+Condensed|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <img src="img/ico-sample.svg" onclick="dropdownClick()" class="svg dropdown-btn">
+          <img src="../img/ico-sample.svg" onclick="dropdownClick()" class="svg dropdown-btn">
           <div id="dropdown-menu" class="dropdown-content">
             <a href="#">ГЛАВНАЯ</a>
             <a href="#">МАГАЗИН</a>
@@ -41,7 +42,7 @@ if(isset($_POST['user_phone1'])) {
           <p>ГЛАВНАЯ</p>
         </div>
         <div class="cart">
-          <img src="img/ico-sample.svg" onclick="cartClick()" class="svg cart-btn">
+          <img src="../img/ico-sample.svg" onclick="cartClick()" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content">
             <h4>Ваша корзина пуста</h4>
             <table>
@@ -81,7 +82,10 @@ if(isset($_POST['user_phone1'])) {
           </ul>
         </div>
       </div> <!-- /.header -->
-      <div class="thanks"><h1>Спасибо, мы перезвоним вам.</h1></div>
+      <div class="thanks">
+        <h1>Спасибо, мы перезвоним вам.</h1>
+        <p>на главную</p>
+      </div>
     </div>
     <footer>
       <hr>
@@ -96,7 +100,7 @@ if(isset($_POST['user_phone1'])) {
       <div class="developer">дизайн и разработка onebadger</div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
-    <script src="js/galleryList.js"></script>
-    <script src="js/app.js"></script>
+    <script src="../js/galleryList.js"></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
