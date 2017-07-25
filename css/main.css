@@ -47,6 +47,10 @@ img {
   margin: 0 auto;
 }
 
+.section {
+  margin-top: 30px;
+}
+
 .section h3 {
   font-size: 1.35em;
   text-align: center;
@@ -67,7 +71,10 @@ img {
   
   width: 100%;
   padding: 10px 20px;
-  background-color: lightcoral;
+  background-color: rgba(180,180,180,.99);
+   -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
 }
 
 
@@ -213,7 +220,7 @@ img {
   position: absolute;
   width: 70px;
   border-radius: 50%;
-  background-color: #666;
+  background-color: rgba(0,0,0,.07);
   padding: 10px;
   cursor: pointer;
 }
@@ -228,13 +235,17 @@ img {
   right: 5%;
 }
 
+.gallery img {
+  display: block;
+}
+
 .gallery p {
   position: absolute;
   bottom: 0;
   text-align: center;
-  padding: 10px;
-  background-color: rgba(0,0,0,.3);
-  color: #fff;
+  padding: 20px 10px;
+  background-color: rgba(0,0,0,.25);
+  color: rgba(255,255,255,.8);
 }
 
 
@@ -242,7 +253,7 @@ img {
 /********** CALL-ME FORM **********/
 
 .call-me {
-  margin-top: 20px;
+  margin: 40px 0 0;
 }
 
 
@@ -266,7 +277,7 @@ img {
 /********** CLIENTS **********/
 
 .clients {
-  padding: 0 10px;
+  padding: 0 10px 20px;
 }
 
 .clients ul {
@@ -275,10 +286,14 @@ img {
   text-align: center;
 }
 
-.clients li img {
+.clients ul li img {
   max-width: 200px;
   border-radius: 50%;
   margin: 10px;
+}
+
+.clients ul li p {
+  padding-top: 15px
 }
 
 /*before slider apply*/
@@ -292,7 +307,10 @@ img {
 
 .main-offer {
   text-align: center;
-  padding: 0 10px;
+  padding: 20px 10px;
+/*  background-color: rgb(180,180,180);*/
+  background: linear-gradient(#3d9114 60%, #86e856);
+  color: #fff
 }
 
 
@@ -367,6 +385,7 @@ footer {
 
 .footer-phone a {
   display: inline-block;
+  font-size: 1.3em;
   padding: 0;
   margin: 0;
 }
