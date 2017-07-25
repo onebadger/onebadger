@@ -357,12 +357,16 @@ img {
 
 .about {
   text-align: center;
-  padding: 0 10px 20px;
+  padding: 10px 10px 20px;
 }
 
 .about img {
   border-radius: 50%;
-  max-width: 200px;
+  max-width: 120px;
+}
+
+.about p {
+  padding-top: 20px;
 }
 
 
