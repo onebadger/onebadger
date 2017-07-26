@@ -17,7 +17,7 @@ body {
   font-family: 'Roboto';
   font-weight: ;
   
-  padding-top: 47px;
+  padding-top: 51px;
 }
 
 a {
@@ -70,8 +70,8 @@ img {
   align-items: center;
   
   width: 100%;
-  padding: 10px 20px;
-  background-color: rgba(180,180,180,.99);
+  padding: 12px 20px;
+  background-color: rgba(255,255,255,.97);
    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
   -moz-box-shadow: 0 0 7px rgba(0,0,0,0.3);
   box-shadow: 0 0 7px rgba(0,0,0,0.3);
@@ -187,7 +187,7 @@ img {
 
 .logo-box {
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
   margin-bottom: 10px;
 }
 
@@ -214,6 +214,7 @@ img {
 
 .gallery {
   position: relative;
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.45);
 }
 
 .arrow {
@@ -253,7 +254,7 @@ img {
 /********** CALL-ME FORM **********/
 
 .call-me {
-  margin: 40px 0 0;
+  margin: 50px 0 0;
 }
 
 
@@ -277,7 +278,11 @@ img {
 /********** CLIENTS **********/
 
 .clients {
-  padding: 0 10px 20px;
+  margin: 30px 20px 20px;
+  padding: 20px;
+  background-color: rgba(0,0,0, .64);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.45);
+  color: #fff;
 }
 
 .clients ul {
@@ -288,8 +293,10 @@ img {
 
 .clients ul li img {
   max-width: 200px;
+  border: 1px solid #888;
   border-radius: 50%;
   margin: 10px;
+  padding: 15px
 }
 
 .clients ul li p {
@@ -309,7 +316,8 @@ img {
   text-align: center;
   padding: 20px 10px;
 /*  background-color: rgb(180,180,180);*/
-  background: linear-gradient(#3d9114 60%, #86e856);
+  background: linear-gradient(#60b343 60%, #b7f1a3);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.45);
   color: #fff
 }
 
@@ -402,7 +410,13 @@ footer {
 .footer-mail {
   font-size: 1.13em;
   letter-spacing: 0.7px;
-  padding: 6px 0;
+  padding-top: 6px
+}
+
+.footer-address {
+  font-size: 1.13em;
+  letter-spacing: 0.5px;
+  padding: 1px 0 15px;
 }
 
 .copyright {
@@ -413,6 +427,10 @@ footer {
 .developer {
   font-size: 0.75em;
   padding-bottom: 10px;
+}
+
+.developer a {
+  color: firebrick;
 }
 
 
