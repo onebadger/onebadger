@@ -15,6 +15,7 @@ if(isset($_POST['user_email2'])) {
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="refresh" content="10;url=../index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
     <title>Badger wood workshop</title>
@@ -29,7 +30,7 @@ if(isset($_POST['user_email2'])) {
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <img src="../img/ico-sample.svg" onclick="dropdownClick()" class="svg dropdown-btn">
+          <img src="../img/ico-dropdown.svg" onclick="dropdownClick()" class="svg dropdown-btn">
           <div id="dropdown-menu" class="dropdown-content">
             <a href="#">ГЛАВНАЯ</a>
             <a href="#">МАГАЗИН</a>
@@ -43,7 +44,7 @@ if(isset($_POST['user_email2'])) {
           <p>ГЛАВНАЯ</p>
         </div>
         <div class="cart">
-          <img src="../img/ico-sample.svg" onclick="cartClick()" class="svg cart-btn">
+          <img src="../img/ico-cart.svg" onclick="cartClick()" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content">
             <h4>Ваша корзина пуста</h4>
             <table>
@@ -70,7 +71,7 @@ if(isset($_POST['user_email2'])) {
       </div> <!-- /.nav-top -->
       <div class="header">
         <div class="logo-box">
-          <div class="logo">onebadger</div>
+          <div class="logo"><a href="../index.html">onebadger</a></div>
           <div class="logo-text">мастерская декора из дерева</div>
         </div>
         <div class="nav-main">
@@ -83,22 +84,26 @@ if(isset($_POST['user_email2'])) {
           </ul>
         </div>
       </div> <!-- /.header -->
+      
       <div class="thanks">
         <h1>Спасибо, мы перезвоним вам.</h1>
-        <p>на главную</p>
+        <p><a href="../index.html">на главную</a></p>
       </div>
     </div>
+    <hr>
     <footer>
-      <hr>
-      <div class="social-icons"></div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/onebadger/" target="_blank"><img class="ico-instagram" src="../img/ico-instagram.svg"></a>
+      </div>
       <div class="nav-footer"></div>
       <div class="footer-contacts">
-        <p><a>8(926)926-9699</a></p>
-        <p><a>seven@badger.one</a></p>
-        <p>iMessage Telegram WhatsApp</p>
+        <p class="footer-phone"><a href="tel:+79269269699">8(926)926-9699</a></p>
+        <p class="footer-messengers">- Telegram WhatsApp iMessage -</p>
+        <p class="footer-mail"><a href="mailto:on.badger@gmail.com">on.badger@gmail.com</a></p>
+        <p class="footer-address"><a href="#">Электрозаводская, 21</a></p>
       </div>
-      <div class="copyright">badger.one 2017 c копирование и публикация со сылкой на badger.one</div>
-      <div class="developer">дизайн и разработка onebadger</div>
+      <div class="copyright">&copy; 2017  копирование и публикация со сылкой на badger.one</div>
+      <div class="developer">дизайн и разработка <a href="mailto:yakov.barsukov@gmail.com">onebadger</a></div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
     <script src="../js/galleryList.js"></script>

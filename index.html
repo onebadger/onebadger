@@ -18,12 +18,12 @@
         <div class="dropdown">
           <img src="img/ico-dropdown.svg" onclick="dropdownClick()" class="svg dropdown-btn">
           <div id="dropdown-menu" class="dropdown-content">
-            <a href="#">ГЛАВНАЯ</a>
-            <a href="#">МАГАЗИН</a>
-            <a href="#">МАСТЕРСКАЯ</a>
-            <a href="#">УСЛУГИ</a>
-            <a href="#">КОНТАКТЫ</a>
-            <a href="#">КОРЗИНА</a>
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="shop.html">МАГАЗИН</a>
+            <a href="workshop.html">МАСТЕРСКАЯ</a>
+            <a href="services.html">УСЛУГИ</a>
+            <a href="contacts.html">КОНТАКТЫ</a>
+<!--            <a href="#">КОРЗИНА</a>-->
           </div>
         </div>
         <div class="breadcrumb">
@@ -32,7 +32,8 @@
         <div class="cart">
           <img src="img/ico-cart.svg" onclick="cartClick()" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content">
-            <h4>Ваша корзина пуста</h4>
+            <h4>Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></h4>
+<!--
             <table>
               <tr>
                 <td>1.</td>
@@ -48,6 +49,8 @@
               </tr>
             </table>
             <h4>Оформить заказ</h4>
+-->
+            <p>Корзина покупок в процессе доработки. Приносим извинения за возможные неудобства.</p>
           </div>
         </div>
         <div class="phone">
@@ -57,7 +60,7 @@
       </div> <!-- /.nav-top -->
       <div class="header">
         <div class="logo-box">
-          <div class="logo">onebadger</div>
+          <div class="logo"><a href="index.html">onebadger</a></div>
           <div class="logo-text">мастерская декора из дерева</div>
         </div>
         <div class="nav-main">
@@ -85,8 +88,8 @@
       <div class="profit section">
         <h3>КАК МЫ РАБОТАЕМ</h3>
         <ul>
-          <li>Выполним под заказ любое изделие из нашего магазина или изменим готовое решение под ваши цели, размеры, бюджет.</li>
-          <li>Сделаем изделие по вашим чертежам или разработаем новое с учетом всех пожеланий. Нарисуем, составим смету, поиграем со шрифтами.</li>
+          <li>Сделаем под заказ любое изделие из нашего магазина или изменим готовое решение под ваши цели, размеры, бюджет.</li>
+          <li>Выполним изделие по вашим чертежам или разработаем новое с учетом всех пожеланий. Нарисуем, составим смету, поиграем со шрифтами.</li>
           <li>Определим стоимость изделия по фотографии из интернета. Дадим рекомендации по материалам и оптимизации стоимости.</li>
           <li>Предложим конкурентную стоимость и сроки вашему заказу.</li>
         </ul>
@@ -113,7 +116,7 @@
         </ul>
       </div>
       <div class="main-offer">
-        <h1>ЭТИМ ЛЕТОМ МЫ ДАРИМ ВАМ СКИДКУ 17% НА РАБОТУ МАСТЕРА</h1>
+        <h1>ЭТИМ ЛЕТОМ МЫ ДАРИМ ВАМ СКИДКУ <!--<span>20</span>-->17% НА РАБОТУ МАСТЕРА</h1>
         <img src="img/600x600-1.jpg">
         <form action="/php/form2.php" method="post">
           <input type="tel" id="phone2" name="user_phone2" pattern="[0-9]{10,11}" placeholder="Ваш телефон">
@@ -125,7 +128,7 @@
       <div class="internal-links">
         <div class="shop-link">
           <img src="img/ico-box.svg">
-          <h3 class="link-header">МАГАЗИН</h3>
+          <h3 class="link-header"><a href="shop.html">МАГАЗИН</a></h3>
           <p>все изделия представленные в этом разделе - наши любимые.  мы делали их уже не один раз. по этому технология производства отработана. и скорость выполнения заказа минимальная.</p>
         </div>
         <div class="workshop-link">
