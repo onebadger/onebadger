@@ -101,3 +101,22 @@ function portfolioClick () {
 
 portfolioImgLoader();
 portfolioClick();
+
+
+
+
+//var $selected = $('.goods-select option:selected');
+//$('.selected_value h3').text() = $selected;
+//
+//$('.goods-select option').click(function(event) {
+//  event.preventDefault();
+//  $('.selected_value') = $selected;
+//});
+
+$('.goods-select').change( function () {
+  var selectTxt = '';
+  $('.goods-select option:selected').each(function() {
+    selectTxt += $(this).text();
+  });
+  $('.selected_value').text(selectTxt);
+});

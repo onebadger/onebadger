@@ -472,6 +472,13 @@ social-icons a:hover {
 
 /* shop.html */
 
+.select_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
 .tags select {
 /*height: 50px*/
 }
@@ -481,21 +488,23 @@ social-icons a:hover {
 
 
 .tags {
-  background: url('../img/select.png') no-repeat 96% 50% #eee;
+  background: url('../img/arrow-down.svg') no-repeat 80% 50%;
+  background-size: 30px 30px;
+  background-color: red;
   height: 46px;
   overflow: hidden;
-  max-width: 90%;
+/*  max-width: 10%;*/
 }
 
 
 .tags select {
   border: none;
-  color: #222;
+  color: #fff;
   background: transparent;
-  font-size: 1.1em;
-  font-weight: bold;
-  padding: 0px 10px 2px;
-  width: 450px;
+/*  font-size: 1.1em;*/
+/*  font-weight: bold;*/
+/*  padding: 0px 10px 2px;*/
+  width: 30px;
   height: 29px;
   -webkit-appearance: none;
 }
