@@ -472,6 +472,56 @@ social-icons a:hover {
 
 /* shop.html */
 
+.section-title {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.section-text {
+  text-align: center;
+}
+
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-wrapper h3 {
+  align-self: center;
+}
+
+.select-box {
+  align-self: center;
+  
+  background: url(../img/select-arrow-open.png) no-repeat right center; /* 96% 0 */
+  height: 31px;
+  width: 270px;
+  overflow: hidden;
+  background-color: #eee;
+  
+/*  text-align: center;*/
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.select-box select {
+   background: transparent;
+   border: none;
+/*   height: 29px;*/
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 300px;
+  
+/*  border: 1px solid #ccc;*/
+/*  border-radius: 14px;*/
+   font-size: 18px;
+   height: 32px;
+  color: #222;
+  margin-left: 8px;
+   
+}
+
+
+
 .select_box {
   display: flex;
   flex-direction: row;
