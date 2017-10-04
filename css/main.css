@@ -53,13 +53,21 @@ img {
   margin-top: 30px;
 }
 
+.section-top {
+  margin-top: -20px;
+}
+
 .section h3 {
-  font-size: 1.35em;
+  font-size: 1.35rem;
   text-align: center;
 }
 
+.enlarged {
+  font-size: 1.13rem;
+}
 
-/********** PAGE **********/ /* index.html */
+
+/******************** PAGE ********************/ /* index.html */
 
 /********** NAV-TOP (fixed) **********/
 
@@ -444,13 +452,11 @@ social-icons a:hover {
 }
 
 .footer-mail {
-  font-size: 1.13em;
   letter-spacing: 0.7px;
   padding-top: 6px
 }
 
 .footer-address {
-  font-size: 1.13em;
   letter-spacing: 0.5px;
   padding: 1px 0 15px;
 }
@@ -470,12 +476,7 @@ social-icons a:hover {
 }
 
 
-/********** PAGE **********/ /* shop.html */
-
-.section-title {
-  font-size: 0.8em;
-  text-align: center;
-}
+/******************** PAGE ********************/ /* shop.html */
 
 .section-text {
   text-align: center;
@@ -486,8 +487,9 @@ social-icons a:hover {
   flex-direction: column;
 }
 
-.select-wrapper h3 {
+.select-wrapper p {
   align-self: center;
+  padding: 20px 0 10px;
 }
 
 .select-box {
@@ -568,7 +570,7 @@ social-icons a:hover {
 
 
 
-/********** PAGE **********/ /* contacts.html */
+/******************** PAGE ********************/ /* contacts.html */
 
 .contacts {
   text-align: center;
@@ -616,11 +618,11 @@ social-icons a:hover {
 
 
 
-/********** PAGE **********/ /* workshop.html */
+/******************** PAGE ********************/ /* workshop.html */
 
 
 
-/********** PAGE **********/ /* 404 error */
+/******************** PAGE ********************/ /* 404 error */
 
 
 
