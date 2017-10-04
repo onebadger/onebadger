@@ -42,14 +42,12 @@ img {
 /********** COMMON RULES **********/
 
 .wrapper {
-/*  min-height: calc( - );*/
   max-width: 500px; /* mobile size imitation */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 266px); /* sticky footer */
 }
-
 
 .section {
   margin-top: 30px;
@@ -60,6 +58,8 @@ img {
   text-align: center;
 }
 
+
+/********** PAGE **********/ /* index.html */
 
 /********** NAV-TOP (fixed) **********/
 
@@ -470,7 +470,7 @@ social-icons a:hover {
 }
 
 
-/* shop.html */
+/********** PAGE **********/ /* shop.html */
 
 .section-title {
   font-size: 0.8em;
@@ -568,7 +568,7 @@ social-icons a:hover {
 
 
 
-/* CONTACTS */
+/********** PAGE **********/ /* contacts.html */
 
 .contacts {
   text-align: center;
@@ -616,7 +616,13 @@ social-icons a:hover {
 
 
 
-/* 404 error */
+/********** PAGE **********/ /* workshop.html */
+
+
+
+/********** PAGE **********/ /* 404 error */
+
+
 
 /* call-me forms */
 
