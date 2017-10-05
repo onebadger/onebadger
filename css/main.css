@@ -291,6 +291,36 @@ img {
   color: rgba(255,255,255,.8);
 }
 
+.preview-cart {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0,0,0,.3);
+  color: rgba(255,255,255,.8);
+  border-radius: 15%;
+}
+
+.preview-cart img {
+  height: 30px;
+}
+
+.preview-info {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(0,0,0,.3);
+  color: rgba(255,255,255,.8);
+  border-radius: 15%;
+}
+
+.preview-info img {
+  height: 30px;
+}
+
 
 
 /********** CALL-ME FORM **********/
