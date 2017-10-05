@@ -113,10 +113,12 @@ portfolioClick();
 //  $('.selected_value') = $selected;
 //});
 
-$('.goods-select').change( function () {
-  var selectTxt = '';
-  $('.goods-select option:selected').each(function() {
-    selectTxt += $(this).text();
-  });
-  $('.selected_value').text(selectTxt);
-});
+//$('.goods-select').change( function () {
+//  var selectTxt = '';
+//  $('.goods-select option:selected').each(function() {
+//    selectTxt += $(this).text();
+//  });
+//  $('.selected_value').text(selectTxt);
+//});
+
+var $selectedGoods = $('.select-goods option:selected').val();
