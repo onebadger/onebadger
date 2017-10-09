@@ -61,6 +61,47 @@ window.onclick = function(event) {
 };
 
 
+// #portfolio
+
+var portfolioImgCounter = 0;
+var lastPortfolioIndex = galleryImg.length - 1;
+
+function portfolioImgLoader () {
+  $('.gallery-img').attr('src', galleryImg[portfolioImgCounter].image);
+  $('.gallery-text').text(galleryImg[portfolioImgCounter].info);
+};
+
+
+function portfolioClick () {
+  
+  $('.arrow-right').click(function(event) {
+    event.preventDefault();
+    if (portfolioImgCounter == lastPortfolioIndex) {
+      portfolioImgCounter = 0;
+      portfolioImgLoader();
+    } else {
+      portfolioImgCounter += 1;
+      portfolioImgLoader();
+    }      
+  });
+
+  $('.arrow-left').click(function(event) {
+    event.preventDefault();
+  
+    if (portfolioImgCounter == 0) {
+      portfolioImgCounter = lastPortfolioIndex;
+      portfolioImgLoader();
+    } else {
+      portfolioImgCounter -= 1;
+      portfolioImgLoader();
+    }
+  });
+}
+
+portfolioImgLoader();
+portfolioClick();
+
+
 
 // tagged shop list 
 
