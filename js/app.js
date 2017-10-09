@@ -64,12 +64,38 @@ window.onclick = function(event) {
 
 // #portfolio
 
+var $selectedGoodsValue = $('.select-goods option:selected').val();
+var $selector = $('.select-goods option');
+
+var shopTaggedLis = [{image:'img/gallery04.jpg',info:'Магниты из дерева ручной.',tags:['souvenir','storage', 'good']},{image:'img/gallery02.jpg',info:'Blah blah blah blah.',tags:['souvenir', 'popular', 'furniture']},{image:'img/gallery06.jpg',info:'Hey hey hey hey hey hey.',tags:['souvenir', 'popular', 'furniture']}];
+
+function getTaggedList (tag) {
+  
+}
+
+var shopTaggedList = [];
+
+var shopListLength = shopTaggedLis.length;
+
+for (var j = 0; j < shopListLength; j++) {
+  for (var i = 0; i < shopTaggedLis[j].tags.length; i++) {
+    if (shopTaggedLis[j].tags[i] === $selectedGoodsValue) {
+      shopTaggedList.push(shopTaggedLis[j]);
+    }
+  }
+}
+
+
+
+
+//if ('tags' in shopTaggedLis[0]) {alert('hi')};
+
 var portfolioImgCounter = 0;
-var lastPortfolioIndex = galleryImg.length - 1;
+var lastPortfolioIndex = shopTaggedList.length - 1;
 
 function portfolioImgLoader () {
-  $('.gallery-img').attr('src', galleryImg[portfolioImgCounter].image);
-  $('.gallery-text').text(galleryImg[portfolioImgCounter].info);
+  $('.gallery-img').attr('src', shopTaggedList[portfolioImgCounter].image);
+  $('.gallery-text').text(shopTaggedList[portfolioImgCounter].info);
 };
 
 
@@ -121,4 +147,26 @@ portfolioClick();
 //  $('.selected_value').text(selectTxt);
 //});
 
-var $selectedGoods = $('.select-goods option:selected').val();
+
+
+
+//calculate li according to tag
+
+//var shopTaggedList = [{image : 'img/gallery01.jpg', info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.', tags : ['souvenir', 'popular', 'storage']},{image : 'img/gallery01.jpg', info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.', tags : ['souvenir', 'popular', 'furniture']}];//var shopTaggedList = [{image : 'img/gallery01.jpg', info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.', tags : ['souvenir', 'popular', 'storage']},{image : 'img/gallery01.jpg', info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.', tags : ['souvenir', 'popular', 'furniture']}];
+
+
+
+//$selector.click( function(event) {
+//  event.preventDefault();
+//  
+//});
+
+
+
+
+
+
+
+
+
+
