@@ -138,14 +138,14 @@ $selector.on('change', function () {
 
 
 function shopListLoader () {
-  $('.gallery-img').attr('src', shopTaggedList[shopIndexCounter].image);
-  $('.gallery-text').text(shopTaggedList[shopIndexCounter].info);
+  $('.shop-gallery-img').attr('src', shopTaggedList[shopIndexCounter].image);
+  $('.shop-gallery-text').text(shopTaggedList[shopIndexCounter].info);
 };
 
 
 function shopGalleryOnClick () {
   
-  $('.arrow-right').click(function(event) {
+  $('.shop-arrow-right').click(function(event) {
     event.preventDefault();
     if (shopIndexCounter === lastShopIndex) {
       shopIndexCounter = 0;
@@ -156,7 +156,7 @@ function shopGalleryOnClick () {
     }      
   });
 
-  $('.arrow-left').click(function(event) {
+  $('.shop-arrow-left').click(function(event) {
     event.preventDefault();
   
     if (shopIndexCounter == 0) {

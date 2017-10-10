@@ -254,7 +254,8 @@ img {
 
 /********** GALLERY **********/
 
-.gallery {
+.gallery,
+.shop-gallery {
   position: relative;
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.45);
 }
@@ -268,21 +269,25 @@ img {
   cursor: pointer;
 }
 
-.arrow-left {
+.arrow-left,
+.shop-arrow-left {
   top: calc(50% - 35px);
   left: 2%;
 }
 
-.arrow-right {
+.arrow-right,
+.shop-arrow-right{
   top: calc(50% - 35px);
   right: 2%;
 }
 
-.gallery img {
+.gallery img,
+.shop-gallery img {
   display: block;
 }
 
-.gallery p {
+.gallery p,
+.shop-gallery p {
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -541,15 +546,15 @@ social-icons a:hover {
 
 .select-wrapper p {
   align-self: center;
-  padding: 30px 0 10px;
+  padding: 30px 0 15px;
 }
 
 .select-box {
   align-self: center;
   
   background: url(../img/select-arrow-open.png) no-repeat right center; /* 96% 0 */
-  height: 31px;
-  width: 270px;
+  height: 30px;
+  width: 310px;
   overflow: hidden;
   background-color: #eee;
   
@@ -563,14 +568,14 @@ social-icons a:hover {
    border: none;
 /*   height: 29px;*/
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
-   width: 300px;
+   width: 320px;
   
 /*  border: 1px solid #ccc;*/
 /*  border-radius: 14px;*/
-   font-size: 18px;
-   height: 32px;
+   font-size: 21px;
+   height: 33px;
   color: #222;
-  margin-left: 8px;
+  margin-left: 10px;
    
 }
 
