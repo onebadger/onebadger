@@ -1,11 +1,11 @@
 var shopList = [
   {
-    image : 'img/gallery03.jpg',
+    image : 'img/gallery01.jpg',
     info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
     tags : ['souvenirs', 'popular', 'storage', 'wedding', 'light']
   },
   {
-    image : 'img/gallery04.jpg',
+    image : 'img/gallery02.jpg',
     info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
     tags : ['souvenirs', 'popular', 'furniture', 'interrior']
   },
