@@ -61,60 +61,65 @@ window.onclick = function(event) {
 };
 
 
-// #portfolio
+// portfolio gallery
 
-var portfolioImgCounter = 0;
-var lastPortfolioIndex = galleryImg.length - 1;
+var portfolioCurrentIndex = 0;
+var portfolioLastIndex = portfolioList.length - 1;
 
-function portfolioImgLoader () {
-  $('.gallery-img').attr('src', galleryImg[portfolioImgCounter].image);
-  $('.gallery-text').text(galleryImg[portfolioImgCounter].info);
+function portfolioLoader () {
+  $('#portfolio-img').attr('src', portfolioList[portfolioCurrentIndex].image);
+  $('#portfolio-text').text(portfolioList[portfolioCurrentIndex].info);
 };
 
 
 function portfolioClick () {
   
-  $('.arrow-right').click(function(event) {
+  $('#portfolio-arr-right').click(function(event) {
     event.preventDefault();
-    if (portfolioImgCounter == lastPortfolioIndex) {
-      portfolioImgCounter = 0;
-      portfolioImgLoader();
+    if (portfolioCurrentIndex == portfolioLastIndex) {
+      portfolioCurrentIndex = 0;
+      portfolioLoader();
     } else {
-      portfolioImgCounter += 1;
-      portfolioImgLoader();
+      portfolioCurrentIndex += 1;
+      portfolioLoader();
     }      
   });
 
-  $('.arrow-left').click(function(event) {
+  $('#portfolio-arr-left').click(function(event) {
     event.preventDefault();
   
-    if (portfolioImgCounter == 0) {
-      portfolioImgCounter = lastPortfolioIndex;
-      portfolioImgLoader();
+    if (portfolioCurrentIndex == 0) {
+      portfolioCurrentIndex = portfolioLastIndex;
+      portfolioLoader();
     } else {
-      portfolioImgCounter -= 1;
-      portfolioImgLoader();
+      portfolioCurrentIndex -= 1;
+      portfolioLoader();
     }
   });
 }
 
-portfolioImgLoader();
+portfolioLoader();
 portfolioClick();
 
 
 
-// tagged shop list 
+// tagged shop gallery
 
 var $selectedGoodsValue = $('.select-goods option:selected').val();
 var $selector = $('.select-goods');
 var shopTaggedList = [];
 var shopListLength = shopList.length;
-var shopIndexCounter = 0;
-var lastShopIndex;
+var shopCurrentIndex = 0;
+var shopLastIndex;
+
+function shopListLoader () {
+  $('#shop-img').attr('src', shopTaggedList[shopCurrentIndex].image);
+  $('#shop-text').text(shopTaggedList[shopCurrentIndex].info);
+};
 
 function getTaggedList () {
   $selectedGoodsValue = $('.select-goods option:selected').val();
-  shopIndexCounter = 0;
+  shopCurrentIndex = 0;
   shopTaggedList = [];
   for (var j = 0; j < shopListLength; j++) {
     for (var i = 0; i < shopList[j].tags.length; i++) {
@@ -123,7 +128,7 @@ function getTaggedList () {
       }
     }
   }
-  lastShopIndex = shopTaggedList.length - 1;
+  shopLastIndex = shopTaggedList.length - 1;
   console.log(shopTaggedList);
   return shopTaggedList;
 }
@@ -132,49 +137,81 @@ getTaggedList();
 
 $selector.on('change', function () {
   getTaggedList();
-  lastShopIndex = shopTaggedList.length - 1;
+  shopLastIndex = shopTaggedList.length - 1;
   shopListLoader();
 });
 
-
-function shopListLoader () {
-  $('.shop-gallery-img').attr('src', shopTaggedList[shopIndexCounter].image);
-  $('.shop-gallery-text').text(shopTaggedList[shopIndexCounter].info);
-};
-
-
-function shopGalleryOnClick () {
+function shopListClick () {
   
-  $('.shop-arrow-right').click(function(event) {
+  $('#shop-arr-right').click(function(event) {
     event.preventDefault();
-    if (shopIndexCounter === lastShopIndex) {
-      shopIndexCounter = 0;
+    if (shopCurrentIndex === shopLastIndex) {
+      shopCurrentIndex = 0;
       shopListLoader();
     } else {
-      shopIndexCounter += 1;
+      shopCurrentIndex += 1;
       shopListLoader();
-    }      
+    }
   });
 
-  $('.shop-arrow-left').click(function(event) {
+  $('#shop-arr-left').click(function(event) {
     event.preventDefault();
   
-    if (shopIndexCounter == 0) {
-      shopIndexCounter = lastShopIndex;
+    if (shopCurrentIndex == 0) {
+      shopCurrentIndex = shopLastIndex;
       shopListLoader();
     } else {
-      shopIndexCounter -= 1;
+      shopCurrentIndex -= 1;
       shopListLoader();
     }
   });
 }
 
 shopListLoader();
-shopGalleryOnClick();
+shopListClick();
 
 
 
 
+// #workshop-slider
+
+var workshopImgCounter = 0;
+var lastWorkshopIndex = schmList.length - 1;
+
+function workshopImgLoader () {
+  $('#workshop-img').attr('src', schmList[workshopImgCounter].image);
+  $('#workshop-text').text(schmList[workshopImgCounter].info);
+};
+
+
+function workshopClick () {
+  
+  $('#workshop-arr-right').click(function(event) {
+    event.preventDefault();
+    if (workshopImgCounter == lastWorkshopIndex) {
+      workshopImgCounter = 0;
+      workshopImgLoader();
+    } else {
+      workshopImgCounter += 1;
+      workshopImgLoader();
+    }      
+  });
+
+  $('#workshop-arr-left').click(function(event) {
+    event.preventDefault();
+  
+    if (workshopImgCounter == 0) {
+      workshopImgCounter = lastWorkshopIndex;
+      workshopImgLoader();
+    } else {
+      workshopImgCounter -= 1;
+      workshopImgLoader();
+    }
+  });
+}
+
+workshopImgLoader();
+workshopClick();
 
 
 
