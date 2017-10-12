@@ -643,11 +643,11 @@ social-icons a:hover {
 }
 
 .contacts-mail {
-  background: url('../img/ico-phone.svg') no-repeat;
+  background: url('../img/ico-mail.svg') no-repeat;
 }
 
 .contacts-address {
-  background: url('../img/ico-phone.svg') no-repeat;
+  background: url('../img/ico-location2.svg') no-repeat;
 }
 
 .contacts-phone,
