@@ -1,3 +1,5 @@
+$(".phone-mask").mask("(999) 999-9999");
+
 // nav dropdown button
 
 function dropdownClick() {
@@ -110,7 +112,7 @@ var portfolioLastIndex = portfolioList.length - 1;
 function portfolioLoader () {
   $('#portfolio-img').attr('src', portfolioList[portfolioCurrentIndex].image);
   $('#portfolio-text').text(portfolioList[portfolioCurrentIndex].info);
-};
+}
 
 
 function portfolioClick () {
@@ -157,12 +159,12 @@ var otherLastIndex;
 function shopListLoader () {
   $('#shop-img').attr('src', shopTaggedList[shopCurrentIndex].image);
   $('#shop-text').text(shopTaggedList[shopCurrentIndex].info);
-};
+}
 
 function otherListLoader () {
   $('#other-img').attr('src', shopNotTaggedList[otherCurrentIndex].image);
   $('#other-text').text(shopNotTaggedList[otherCurrentIndex].info);
-};
+}
 
 function getShopLists () {
   shopTaggedList = [];
@@ -243,6 +245,8 @@ function otherListClick () {
   });
 }
 otherListClick();
+
+
 
 
 
