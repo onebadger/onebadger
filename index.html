@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/forms.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+<!--    <link rel="stylesheet" type="text/css" href="css/yo.css">-->
     
 <!--
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -23,7 +24,11 @@
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <img src="img/ico-dropdown.svg" onclick="dropdownClick()" class="svg dropdown-btn">
+          <div id="hamburger" onclick="dropdownClick()" class="svg dropdown-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div id="dropdown-menu" class="dropdown-content">
             <a href="index.html">ГЛАВНАЯ</a>
             <a href="shop.html">МАГАЗИН</a>
@@ -175,6 +180,16 @@
     <script src="js/shopList.js"></script>
     <script src="js/schmList.js"></script>
     <script src="js/app.js"></script>
+    
+    <script>
+    
+      $(document).ready(function(){
+        $('#hamburger').click(function(){
+            $(this).toggleClass('open');
+        });
+      });
+      
+    </script>
     
   </body>
 </html>
