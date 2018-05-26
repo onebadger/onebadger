@@ -1,6 +1,6 @@
 $(".phone-mask").mask("(999) 999-9999");
 
-// nav dropdown button
+// nav dropdown button 
 
 function dropdownClick() {
     document.getElementById("dropdown-menu").classList.toggle("show");
