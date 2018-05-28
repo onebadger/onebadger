@@ -1,66 +1,81 @@
 $(".phone-mask").mask("(999) 999-9999");
 
-// nav dropdown button 
+// nav dropdown button
 
-function dropdownClick() {
-    document.getElementById("dropdown-menu").classList.toggle("show");
-}
+$('#hamburger').click(function(){
+  $("#dropdown-menu")[0].classList.toggle("show");
+});
 
 // cart dropdown button
 
-function cartClick() {
-    document.getElementById("dropdown-cart").classList.toggle("show");
-}
+$('#cart-icon').click(function(){
+  $("#dropdown-cart")[0].classList.toggle("show");
+});
+
+$(document).ready(function(){
+  $('#hamburger').click(function(){
+    $(this).toggleClass('open');
+  });
+});
 
 // close nav-dropdown & cart-dropdown onclick outside the buttons
 
-window.onclick = function(event) {
-  
+var dropdownContent = document.getElementsByClassName("dropdown-content")[0];
+var cartContent = document.getElementsByClassName("cart-content")[0];
+
+window.addEventListener("click", function(event) {
   if (!event.target.matches('.svg')) {
-    
-    var dropdownContent = document.getElementsByClassName("dropdown-content");
-    var cartContent = document.getElementsByClassName("cart-content");
-    
-    var i;
-    for (i = 0; i < dropdownContent.length; i++) {
-      var openDropdown = dropdownContent[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-    var j;
-    for (i = 0; i < cartContent.length; i++) {
-      var openDropdowns = cartContent[i];
-      if (openDropdowns.classList.contains('show')) {
-        openDropdowns.classList.remove('show');
-      }
-    }
-    
-  } else if (!event.target.matches('.dropdown-btn')) {
-    
-    var dropdownContent = document.getElementsByClassName("dropdown-content");
-    
-    var i;
-    for (i = 0; i < dropdownContent.length; i++) {
-      var openDropdown = dropdownContent[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-    
-  } else if (!event.target.matches('.cart-btn')) {
-        
-    var cartContent = document.getElementsByClassName("cart-content");
-    
-    var j;
-    for (i = 0; i < cartContent.length; i++) {
-      var openDropdowns = cartContent[i];
-      if (openDropdowns.classList.contains('show')) {
-        openDropdowns.classList.remove('show');
-      }
+    if (dropdownContent.classList.contains('show')) {
+      dropdownContent.classList.remove('show');
+      $('#hamburger').classList.remove('open');
+    } else if (cartContent.classList.contains('show')) {
+      cartContent.classList.remove('show');
     }
   }
-};
+});
+
+
+//window.onclick = function(event) {
+//  
+//  if (!event.target.matches('.svg')) {
+//    var dropdownContent = document.getElementsByClassName("dropdown-content");
+//    var cartContent = document.getElementsByClassName("cart-content");
+//    var i;
+//    for (i = 0; i < dropdownContent.length; i++) {
+//      var openDropdown = dropdownContent[i];
+//      if (openDropdown.classList.contains('show')) {
+//        openDropdown.classList.remove('show');
+//      }
+//    }
+//    var j;
+//    for (i = 0; i < cartContent.length; i++) {
+//      var openDropdowns = cartContent[i];
+//      if (openDropdowns.classList.contains('show')) {
+//        openDropdowns.classList.remove('show');
+//      }
+//    }
+//    
+//  } else if (!event.target.matches('.dropdown-btn')) {
+//    
+//    var i;
+//    for (i = 0; i < dropdownContent.length; i++) {
+//      var openDropdown = dropdownContent[i];
+//      if (openDropdown.classList.contains('show')) {
+//        openDropdown.classList.remove('show');
+//      }
+//    }
+//    
+//  } else if (!event.target.matches('.cart-btn')) {
+//    
+//    var j;
+//    for (i = 0; i < cartContent.length; i++) {
+//      var openDropdowns = cartContent[i];
+//      if (openDropdowns.classList.contains('show')) {
+//        openDropdowns.classList.remove('show');
+//      }
+//    }
+//  }
+//};
 
 // workshop slider
 

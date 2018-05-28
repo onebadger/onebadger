@@ -24,7 +24,7 @@
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <div id="hamburger" onclick="dropdownClick()" class="svg dropdown-btn">
+          <div id="hamburger" class="svg dropdown-btn">
             <span></span>
             <span></span>
             <span></span>
@@ -43,7 +43,7 @@
           <p>ГЛАВНАЯ</p>
         </div>
         <div class="cart">
-          <img src="img/ico-cart.svg" onclick="cartClick()" class="svg cart-btn">
+          <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content">
             <p class="text text-600">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></p>
             <br>
@@ -180,16 +180,6 @@
     <script src="js/shopList.js"></script>
     <script src="js/schmList.js"></script>
     <script src="js/app.js"></script>
-    
-    <script>
-    
-      $(document).ready(function(){
-        $('#hamburger').click(function(){
-            $(this).toggleClass('open');
-        });
-      });
-      
-    </script>
     
   </body>
 </html>

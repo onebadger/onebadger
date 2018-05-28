@@ -288,7 +288,7 @@ img {
 }
 
 .show {
-  display: block; /* app.js addClass to .dropdown-content onclick */
+  display: block; /* app.js addClass to .dropdown-content & cart-content onclick */
 }
 
 /***** phone *****/
