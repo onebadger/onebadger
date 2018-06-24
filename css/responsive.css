@@ -1,4 +1,6 @@
-@media (min-width: 400px) {
+/* 320 768 960 1280 1440 */
+
+@media (min-width: 360px) {
 
   .dropdown {
     flex-grow: 3;

@@ -50,7 +50,6 @@ img {
 /********** COMMON RULES **********/
 
 .wrapper {
-  max-width: 500px; /* mobile size imitation */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -113,7 +112,6 @@ img {
  
   
   width: 100%;
-  max-width: 500px;
   padding: 12px 20px;
   background-color: rgba(255,255,255,.97);
    -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
