@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    
   </head>
   <body>
     <div class="wrapper">
       <div class="nav-top">
         <div class="dropdown">
-          <img src="img/ico-dropdown.svg" onclick="dropdownClick()" class="svg dropdown-btn">
+          <div id="hamburger" class="svg dropdown-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div id="dropdown-menu" class="dropdown-content">
             <a href="index.html">ГЛАВНАЯ</a>
             <a href="shop.html">МАГАЗИН</a>
@@ -28,10 +35,10 @@
           </div>
         </div>
         <div class="breadcrumb">
-          <p>МАСТЕРСКАЯ</p>
+          <p>ГЛАВНАЯ</p>
         </div>
         <div class="cart">
-          <img src="img/ico-cart.svg" onclick="cartClick()" class="svg cart-btn">
+          <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content">
             <p class="text text-600">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></p>
             <br>
@@ -104,7 +111,7 @@
       <div class="copyright">&copy; 2017 копирование и публикация со сылкой на badger.one</div>
       <div class="developer">дизайн и разработка <a href="mailto:yakov.barsukov@gmail.com">onebadger</a></div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+    
     <script src="js/schmList.js"></script>
     <script src="js/app.js"></script>
   </body>
