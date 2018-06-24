@@ -1,7 +1,7 @@
 $('.phone-mask').mask('(999) 999-9999');
 
-// animated nav dropdown button & cart dropdown button
 
+// animated nav dropdown button & cart dropdown button
 
 var dropdownToggle = false;
 var cartToggle = false;
@@ -29,7 +29,8 @@ function openCloseCart () {
 }
 
 window.addEventListener("click", function(event) {
-  if ( !$(event.target).parents('.dropdown-btn').length && !event.target.matches('.dropdown-btn')) {
+  if ( !$(event.target).closest('.dropdown-btn').length &&  
+      !$(event.target).closest('#dropdown-menu').length ) {
     $('#dropdown-menu').removeClass('show');
     $('#hamburger').removeClass('open');
     dropdownToggle = false;
