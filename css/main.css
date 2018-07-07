@@ -54,6 +54,11 @@ img {
   margin-right: 20px;
 }
 
+margin-y {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*
 .padding-x {
   padding-left: 20px;
@@ -73,22 +78,23 @@ img {
   font-weight: 600;
 }
 
-.section {
-  margin-top: 30px;
+.text-enlarged {
+  font-size: 1.13rem;
 }
 
-.section-top {
-  margin-top: -20px;
+/* section */
+
+.section {
+  padding: 30px 0;
 }
 
 .section h3 {
   font-size: 1.35rem;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.enlarged {
-  font-size: 1.13rem;
-}
+
 
 
 /******************** PAGE ********************/ /* index.html */
@@ -220,6 +226,14 @@ img {
 }
 
 /***** dropdown button *****/
+
+/*
+
+class to appear with 0 opacity
+class to show with 100 opacity - animation (set timeout)
+clear timeout for the purpouse ot user clicks to fasr
+
+*/
 
 #hamburger a {
   display: block;
@@ -462,7 +476,7 @@ img {
   list-style: none;
   padding-left: 0;
   text-align: center;
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 
 .clients ul li img {
@@ -489,7 +503,7 @@ img {
 .main-offer {
   text-align: center;
   margin-top: 40px;
-  padding: 20px 10px;
+  padding: 20px;
 /*  background-color: rgb(180,180,180);*/
   background: linear-gradient(#56a03c 60%, #b7f1a3);
   box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.45);
