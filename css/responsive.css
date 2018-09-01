@@ -20,3 +20,23 @@
   }
   
 }
+
+@media (min-width: 450px) {
+  
+  .dropdown {
+  flex-grow: 0.5;
+  }
+
+  .cart {
+    flex-grow: 1;
+  }
+
+  .phone {
+    flex-grow: 0;
+  }
+  
+}
+
+@media (min-width: 950px) {
+  
+}

@@ -6,17 +6,17 @@
     <meta name="robots" content="noindex,nofollow">
     <title>Badger wood workshop</title>
     <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Arsenal:400,700|Fira+Sans:400,500,700|Istok+Web:400,700|Open+Sans+Condensed:300,700|Roboto+Condensed:400,700|Roboto:400,500,700|Ubuntu+Condensed|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
     
   </head>
   <body>
-    <div class="wrapper">
+    <div class="nav-wrapper">
       <div class="nav-top">
         <div class="dropdown">
           <div id="hamburger" class="svg dropdown-btn">
@@ -24,12 +24,12 @@
             <span></span>
             <span></span>
           </div>
-          <div id="dropdown-menu" class="dropdown-content">
-            <a href="index.html">ГЛАВНАЯ</a>
-            <a href="shop.html">МАГАЗИН</a>
-            <a href="workshop.html">МАСТЕРСКАЯ</a>
-            <a href="services.html">УСЛУГИ</a>
-            <a href="contacts.html">КОНТАКТЫ</a>
+          <div id="dropdown-menu" class="dropdown-content dropdown-item">
+            <a href="index.html" class="link">ГЛАВНАЯ</a>
+            <a href="shop.html" class="link">МАГАЗИН</a>
+            <a href="workshop.html" class="link">МАСТЕРСКАЯ</a>
+            <a href="services.html" class="link">УСЛУГИ</a>
+            <a href="contacts.html" class="link">КОНТАКТЫ</a>
             <!--<a href="#">FAQ - ВОПРОСЫ</a>-->
             <!--<a href="#">КОРЗИНА</a>-->
           </div>
@@ -39,10 +39,10 @@
         </div>
         <div class="cart">
           <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
-          <div id="dropdown-cart" class="cart-content">
-            <p class="text text-600">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></p>
+          <div id="dropdown-cart" class="cart-content dropdown-item">
+            <p class="text text-500">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></p>
             <br>
-<!--
+  <!--
             <table>
               <tr>
                 <td>1.</td>
@@ -58,7 +58,7 @@
               </tr>
             </table>
             <h4>Оформить заказ</h4>
--->
+  -->
             <p class="text">Корзина покупок в процессе доработки. Приносим извинения за возможные неудобства.</p>
           </div>
         </div>
@@ -67,6 +67,8 @@
           <p class="phone-number"><a href="tel:+79269269699">8(926)9269699</a></p>
         </div>
       </div> <!-- /.nav-top -->
+    </div> <!-- /.nav-wrapper -->
+    <div class="wrapper">
       <div class="header">
         <div class="logo-box">
           <div class="logo"><a href="index.html">onebadger</a></div>

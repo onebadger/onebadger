@@ -43,7 +43,7 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 500px; /* mobile width imitation */
+  max-width: 1000px; /* 500 - mobile width imitation */
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 266px); /* sticky footer */
@@ -100,25 +100,30 @@ margin-y {
 /******************** PAGE ********************/ /* index.html */
 
 /********** NAV-TOP (fixed) **********/
-
-.nav-top {
+.nav-wrapper {
   position: fixed;
   top: 0;
 /*  left: 0;*/
   z-index: 1;
-  max-width: 500px; /* mobile width imitation */
+  width: 100%;
+  background-color: rgba(255,255,255,.97);
+   -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+}
+.nav-top {
+  max-width: 1000px;
+  margin: 0 auto;
+   
   
   display: flex;
   justify-content: space-between;
   align-items: center;
  
   
-  width: 100%;
+/*  width: 100%;*/
   padding: 12px 20px;
-  background-color: rgba(255,255,255,.97);
-   -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0 0 7px rgba(0,0,0,0.3);
-  box-shadow: 0 0 7px rgba(0,0,0,0.3);
+  
 }
 
 
