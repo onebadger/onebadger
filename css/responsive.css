@@ -37,6 +37,14 @@
   
 }
 
-@media (min-width: 950px) {
+@media (min-width: 700px) {
   
+  #hamburger,
+  .breadcrumb {
+    display: none;
+  }
+  
+  #navigation {
+    display: block;
+  }
 }

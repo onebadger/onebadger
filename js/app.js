@@ -239,7 +239,15 @@ function otherListClick () {
 otherListClick();
 
 
+function onWindowResize() {
+  if ($(window).css(width) > 600) {
+    
+  }
+}
 
+$(window).ready( function() {
+  $(window).on('resize', onWindowResize)
+});
 
 
 

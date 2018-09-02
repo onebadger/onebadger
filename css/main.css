@@ -82,6 +82,10 @@ margin-y {
   font-size: 1.13rem;
 }
 
+.selected {
+  font-weight: 500;
+}
+
 /* section */
 
 .section {
@@ -112,7 +116,7 @@ margin-y {
   box-shadow: 0 0 7px rgba(0,0,0,0.3);
 }
 .nav-top {
-  max-width: 500px; /* 500px - mobile width imitation / 1000px */
+  max-width: 1000px; /* 500px - mobile width imitation / 1000px */
   margin: 0 auto;
    
   
@@ -232,6 +236,30 @@ margin-y {
 
 /***** dropdown button *****/
 
+/*navigation*/
+
+#navigation {
+  display: none;
+}
+
+#navigation ul {
+  display: flex;
+  list-style: none;
+}
+
+#navigation ul li {
+  padding-right: 10px;
+}
+
+#navigation ul li p {
+  font-size: 0.85em;
+}
+
+#navigation ul li p:hover {
+  font-weight: 500;
+
+}
+
 /*
 
 class to appear with 0 opacity
@@ -270,11 +298,12 @@ clear timeout for the purpouse ot user clicks to fasr
     padding: 7px 15px;
     text-decoration: none;
     display: block;
-    padding-left: 25%; /* mobile width imitation / del */
+    padding-left: 25%;  /* mobile width imitation / del */
+    font-size: 0.9em;
 }
 
 .dropdown-content a:hover {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /*
