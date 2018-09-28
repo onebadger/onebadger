@@ -1,10 +1,10 @@
-index.html
+navigation
+- logo on wide screen
+- cart function
+- cart on click transformation (like hamburger)
+- open/close dropdowns animation
 
-- dropdown menu - active shopping cart ico inside
-- cart - cart logics
-- logo - find font without descenders
-- gallery - gallery logics
-- clients - clients logics
+index.html
 
 shop.html
 

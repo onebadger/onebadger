@@ -282,7 +282,6 @@ clear timeout for the purpouse ot user clicks to fasr
   
   position: absolute;
   top: 51px;
-  left: center;
   left: 0px;
   
   width: 100%;
@@ -298,7 +297,6 @@ clear timeout for the purpouse ot user clicks to fasr
     padding: 7px 15px;
     text-decoration: none;
     display: block;
-    padding-left: 25%;  /* mobile width imitation / del */
     font-size: 0.9em;
 }
 

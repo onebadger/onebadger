@@ -11,11 +11,13 @@
     <link rel="stylesheet" type="text/css" href="css/forms.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
   </head>
   <body>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper js-contacts">
       <div class="nav-top">
         <div class="dropdown">
           <div id="hamburger" class="svg dropdown-btn">
@@ -134,7 +136,7 @@
       <div class="developer">дизайн и разработка <a href="mailto:yakov.barsukov@gmail.com">onebadger</a></div>
     </footer>
     
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>-->
+    <!-- yandex.map -->
     <script type="text/javascript">
       ymaps.ready(init);
       var myMap;
@@ -142,7 +144,7 @@
 
       function init() {     
         myMap = new ymaps.Map("map", {
-          center: [55.786505, 37.704134],
+          center: [55.785505, 37.707134],
           zoom: 14
         });
         
@@ -153,6 +155,8 @@
         myMap.behaviors.disable('scrollZoom');
       }
     </script>
+    <!-- /yandex.map -->
+    
     <script src="js/portfolioList.js"></script>
     <script src="js/shopList.js"></script>
     <script src="js/schmList.js"></script>
