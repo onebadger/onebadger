@@ -270,7 +270,7 @@ if ($('.js-shop').length) {
   }
   otherListClick();
   
-}
+} // /.js-shop
 
 
 

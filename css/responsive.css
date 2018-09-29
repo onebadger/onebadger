@@ -3,7 +3,8 @@
 @media (min-width: 360px) {
 
   .dropdown {
-    flex-grow: 3;
+    flex-grow: 0;
+    padding-right: 15px;
   }
 
   .breadcrumb {
@@ -24,11 +25,12 @@
 @media (min-width: 450px) {
   
   .dropdown {
-  flex-grow: 0.5;
+    flex-grow: 0;
+    padding-right: 20px
   }
 
   .cart {
-    flex-grow: 1;
+    flex-grow: 5;
   }
 
   .phone {
@@ -46,9 +48,51 @@
   #hamburger,
   .breadcrumb {
     display: none;
+    
   }
   
   #navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown {
+    flex-grow: 5;
+  }
+  
+}
+
+@media (min-width: 850px) {
+  
+  
+  
+  .dropdown {
+    flex-grow: 13;
+  }
+  
+  .phone-time {
+  display: inline;
+    font-size: 0.75em;
+    padding-right: 20px;
+    align-self: center
+}
+  .phone-time {
+  
+  
+}
+  
+}
+
+@media (min-width: 1000px) {
+  .nav-logo {
     display: block;
+    padding-right: 20px;
+    
+
+  }
+  
+  .nav-logo img {
+    width: 27px;
+  height: 27px;
   }
 }

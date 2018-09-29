@@ -1,5 +1,7 @@
 navigation
-- logo on wide screen
+- change breadcrumb on dropdown menu hover
+- change nav-logo to up-arrow on hover
+- scroll up on nav-logo click
 - cart function
 - cart on click transformation (like hamburger)
 - open/close dropdowns animation

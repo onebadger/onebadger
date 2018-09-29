@@ -150,6 +150,10 @@ margin-y {
   height: 27px;
 }
 
+.phone {
+  display: flex;
+}
+
 /***** animated hamburger by Jesse Couch *****/
 
 #hamburger {
@@ -238,7 +242,8 @@ margin-y {
 
 /*navigation*/
 
-#navigation {
+#navigation,
+.nav-logo {
   display: none;
 }
 
@@ -346,7 +351,7 @@ clear timeout for the purpouse ot user clicks to fasr
 
 /***** phone *****/
 
-.phone p {
+.phone-number {
   font-size:1.05em
 }
 
