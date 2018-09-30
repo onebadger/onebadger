@@ -49,6 +49,54 @@ var portfolioList = [
   }
 ];
 
+var shopList = [
+  {
+    image : 'img/gallery01.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'popular', 'storage', 'wedding', 'light']
+  },
+  {
+    image : 'img/gallery02.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'popular', 'furniture', 'interrior']
+  },
+  {
+    image : 'img/gallery03.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'new-year', 'flowers']
+  },
+  {
+    image : 'img/gallery04.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'new-year', 'light', 'wedding', 'interrior']
+  },
+  {
+    image : 'img/gallery05.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'children', 'popular', 'new-year', 'sea', 'volumetric-letter']
+  },
+  {
+    image : 'img/gallery06.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'children', 'glans', 'new-year']
+  },
+  {
+    image : 'img/gallery07.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'children', 'popular']
+  },
+  {
+    image : 'img/gallery08.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'children', 'glans', 'wedding']
+  },
+  {
+    image : 'img/gallery09.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой. Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.',
+    tags : ['souvenirs', 'popular', 'new-year', 'interrior', 'furniture', 'presents', 'flowers']
+  }
+];
+
 var schmList = [
   {
     image : 'img/schm/schm01-1.jpg',
@@ -94,7 +142,7 @@ $('.phone-mask').mask('(999) 999-9999');
 var dropdownToggle = false;
 var cartToggle = false;
 
-function openDropdown() {
+function openDropdown() { 
   $('#dropdown-menu').addClass('show');
   $('#hamburger').addClass('open');
   dropdownToggle = true;
@@ -172,8 +220,8 @@ var currentIndex = 0;
   
 // gallery img loader
 function galleryLoader (list) {
-  $('#portfolio-img').attr('src', list[currentIndex].image);
-  $('#portfolio-text').text(list[currentIndex].info);
+  $('.portfolio-img').attr('src', list[currentIndex].image);
+  $('.portfolio-text').text(list[currentIndex].info);
   console.log(2);
 }
 
@@ -181,7 +229,7 @@ function galleryLoader (list) {
 function galleryClick (list) {
   var lastIndex = list.length - 1;
   
-  $('#portfolio-arr-right').click(function(event) {
+  $('.portfolio-arr-right').click(function(event) {
     event.preventDefault();
     if (currentIndex == lastIndex) {
       currentIndex = 0;
@@ -192,7 +240,7 @@ function galleryClick (list) {
     }      
   });
   
-  $('#portfolio-arr-left').click(function(event) {
+  $('.portfolio-arr-left').click(function(event) {
     event.preventDefault();
     if (currentIndex == 0) {
       currentIndex = lastIndex;
@@ -321,7 +369,6 @@ if ($('.js-shop').length) {
   otherListClick();
   
 } // /.js-shop block
-
 
 
 // workshop.html block
