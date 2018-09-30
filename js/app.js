@@ -126,48 +126,6 @@ if ($('.js-index').length) {
 
 if ($('.js-shop').length) {
   
-  // workshop slider
-
-  var workshopCurrentIndex = 0;
-  var workshopLastIndex = schmList.length - 1;
-
-  function workshopListLoader () {
-    $('#workshop-img').attr('src', schmList[workshopCurrentIndex].image);
-    $('#workshop-text').text(schmList[workshopCurrentIndex].info);
-  };
-
-  workshopListLoader();
-
-  function workshopClick () {
-
-    $('#workshop-arr-right').click(function(event) {
-      event.preventDefault();
-      if (workshopCurrentIndex == workshopLastIndex) {
-        workshopCurrentIndex = 0;
-        workshopListLoader();
-      } else {
-        workshopCurrentIndex += 1;
-        workshopListLoader();
-      }      
-    });
-
-    $('#workshop-arr-left').click(function(event) {
-      event.preventDefault();
-
-      if (workshopCurrentIndex == 0) {
-        workshopCurrentIndex = workshopLastIndex;
-        workshopListLoader();
-      } else {
-        workshopCurrentIndex -= 1;
-        workshopListLoader();
-      }
-    });
-  }
-
-  workshopListLoader();
-  workshopClick();
-  
-  
   // shop lists sliders
 
   var $selectedGoodsValue = $('.select-goods option:selected').val();
@@ -275,10 +233,50 @@ if ($('.js-shop').length) {
 
 
 
+if ($('.js-workshop').length) {
+    
+  // workshop slider
 
+  var workshopCurrentIndex = 0;
+  var workshopLastIndex = schmList.length - 1;
+  
+  function workshopListLoader () {
+    $('#workshop-img').attr('src', schmList[workshopCurrentIndex].image);
+    $('#workshop-text').text(schmList[workshopCurrentIndex].info);
+  };
 
+  workshopListLoader();
 
+  function workshopClick () {
 
+    $('#workshop-arr-right').click(function(event) {
+      event.preventDefault();
+      if (workshopCurrentIndex == workshopLastIndex) {
+        workshopCurrentIndex = 0;
+        workshopListLoader();
+      } else {
+        workshopCurrentIndex += 1;
+        workshopListLoader();
+      }      
+    });
+
+    $('#workshop-arr-left').click(function(event) {
+      event.preventDefault();
+
+      if (workshopCurrentIndex == 0) {
+        workshopCurrentIndex = workshopLastIndex;
+        workshopListLoader();
+      } else {
+        workshopCurrentIndex -= 1;
+        workshopListLoader();
+      }
+    });
+  }
+
+  workshopListLoader();
+  workshopClick();
+
+} // /.js-workshop
 
 
 
