@@ -1,3 +1,89 @@
+var portfolioList = [
+  {
+    image : 'img/gallery01.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery02.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery03.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery04.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery05.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery06.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery07.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery08.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery09.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery10.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery11.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/gallery12.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  }
+];
+
+var schmList = [
+  {
+    image : 'img/schm/schm01-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm02-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm03-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm04-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm05-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm06-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm07-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  },
+  {
+    image : 'img/schm/schm08-1.jpg',
+    info : 'Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.'
+  }
+];
+
 // javascript mediaqueri breakpoint
 var cssBreakpoint = $('.js-media');
 
@@ -80,50 +166,56 @@ $('.cart-btn').click(function() {
   openCloseCart();
 });
 
-// index.html
+
+// gallery function
+var currentIndex = 0;
+  
+// gallery img loader
+function galleryLoader (list) {
+  $('#portfolio-img').attr('src', list[currentIndex].image);
+  $('#portfolio-text').text(list[currentIndex].info);
+  console.log(2);
+}
+
+// gallery left/right click
+function galleryClick (list) {
+  var lastIndex = list.length - 1;
+  
+  $('#portfolio-arr-right').click(function(event) {
+    event.preventDefault();
+    if (currentIndex == lastIndex) {
+      currentIndex = 0;
+      galleryLoader(list);
+    } else {
+      currentIndex += 1;
+      galleryLoader(list);
+    }      
+  });
+  
+  $('#portfolio-arr-left').click(function(event) {
+    event.preventDefault();
+    if (currentIndex == 0) {
+      currentIndex = lastIndex;
+      galleryLoader(list);
+    } else {
+      currentIndex -= 1;
+      galleryLoader(list);
+    }
+  });
+}
+
+
+// index.html block
 if ($('.js-index').length) {
   
   // portfolio slider
-
-  var portfolioCurrentIndex = 0;
-  var portfolioLastIndex = portfolioList.length - 1;
-
-  function portfolioLoader () {
-    $('#portfolio-img').attr('src', portfolioList[portfolioCurrentIndex].image);
-    $('#portfolio-text').text(portfolioList[portfolioCurrentIndex].info);
-  }
-
-
-  function portfolioClick () {
-
-    $('#portfolio-arr-right').click(function(event) {
-      event.preventDefault();
-      if (portfolioCurrentIndex == portfolioLastIndex) {
-        portfolioCurrentIndex = 0;
-        portfolioLoader();
-      } else {
-        portfolioCurrentIndex += 1;
-        portfolioLoader();
-      }      
-    });
-
-    $('#portfolio-arr-left').click(function(event) {
-      event.preventDefault();
-      if (portfolioCurrentIndex == 0) {
-        portfolioCurrentIndex = portfolioLastIndex;
-        portfolioLoader();
-      } else {
-        portfolioCurrentIndex -= 1;
-        portfolioLoader();
-      }
-    });
-  }
-
-  portfolioLoader();
-  portfolioClick();
+  galleryLoader(portfolioList);
+  galleryClick(portfolioList);
   
-}
+} // /.js-index block
 
+
+// shop.html block
 if ($('.js-shop').length) {
   
   // shop lists sliders
@@ -228,55 +320,18 @@ if ($('.js-shop').length) {
   }
   otherListClick();
   
-} // /.js-shop
+} // /.js-shop block
 
 
 
-
+// workshop.html block
 if ($('.js-workshop').length) {
     
   // workshop slider
+  galleryLoader(schmList);
+  galleryClick(schmList);
 
-  var workshopCurrentIndex = 0;
-  var workshopLastIndex = schmList.length - 1;
-  
-  function workshopListLoader () {
-    $('#workshop-img').attr('src', schmList[workshopCurrentIndex].image);
-    $('#workshop-text').text(schmList[workshopCurrentIndex].info);
-  };
-
-  workshopListLoader();
-
-  function workshopClick () {
-
-    $('#workshop-arr-right').click(function(event) {
-      event.preventDefault();
-      if (workshopCurrentIndex == workshopLastIndex) {
-        workshopCurrentIndex = 0;
-        workshopListLoader();
-      } else {
-        workshopCurrentIndex += 1;
-        workshopListLoader();
-      }      
-    });
-
-    $('#workshop-arr-left').click(function(event) {
-      event.preventDefault();
-
-      if (workshopCurrentIndex == 0) {
-        workshopCurrentIndex = workshopLastIndex;
-        workshopListLoader();
-      } else {
-        workshopCurrentIndex -= 1;
-        workshopListLoader();
-      }
-    });
-  }
-
-  workshopListLoader();
-  workshopClick();
-
-} // /.js-workshop
+} // /.js-workshop block
 
 
 
