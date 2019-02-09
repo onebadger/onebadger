@@ -51,7 +51,7 @@
         <div class="cart">
           <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
           <div id="dropdown-cart" class="cart-content dropdown-item">
-            <p class="text text-500">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="#">КОНТАКТЫ</a></p>
+            <p class="text text-500">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="contacts.html">КОНТАКТЫ</a></p>
             <br>
   <!--
             <table>
@@ -71,6 +71,7 @@
             <h4>Оформить заказ</h4>
   -->
             <p class="text">Корзина покупок в процессе доработки. Приносим извинения за возможные неудобства.</p>
+            <div class="cart-emoji"><img src="img/emoji/1f3ff.png"></div>
           </div>
         </div>
         <div class="phone">
@@ -96,12 +97,59 @@
           </ul>
         </div>
       </div> <!-- /.header -->
-      <div id="portfolio-slider" class="gallery">
-        <img class="portfolio-arr-left arrow arrow-left" src="img/arrow-left.svg">
-        <img class="portfolio-arr-right arrow arrow-right" src="img/arrow-right.svg">
-        <img class="portfolio-img gallery-img">
-        <p class="portfolio-text gallery-text"></p>
+
+      
+      <div id="portfolio" class="portfolio-slider">
+        <div class="slider-col slider-col1">
+          <div class="slider-item slider-item1">
+            <div class="item-wrap">
+              <img src="img/gallery06.jpg">
+            </div>
+          </div>
+          <div class="slider-item slider-item2">
+            <div class="item-wrap">
+              <img src="img/gallery02.jpg">
+            </div>
+          </div>
+          <div class="slider-item slider-item3">
+            <div class="item-wrap">
+              <img src="img/gallery08.jpg">
+            </div>
+          </div>
+          <div class="slider-item slider-item4">
+            <div class="item-wrap">
+              <img src="img/gallery05.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="slider-col slider-col2">
+          <div class="slider-item slider-item5">
+            <div class="item-wrap">
+              <img src="img/gallery07.jpg">
+              <img id="gallery-arr-left" class="portfolio-arr-left arrow arrow-left" src="img/arrow-left.svg">
+              <img id="gallery-arr-right" class="portfolio-arr-right arrow arrow-right" src="img/arrow-right.svg">
+              <div class="item-text">
+                <p>Магниты из дерева ручной работы с российской тематикой.  Выполнены на тонкой фанере, раскрашены и соединены с  магнитным слоем.</p>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div class="slider-col slider-col3">
+          <div class="slider-item slider-item6">
+            <div class="item-wrap">
+              <img src="img/gallery03.jpg">
+            </div>
+          </div>
+          <div class="slider-item slider-item7">
+            <div class="item-wrap">
+              <img src="img/gallery01.jpg">
+            </div>
+          </div>
+        </div>
       </div>
+      
       <div class="call-me">
         <form action="/php/form1.php" method="post">
           <input type="tel" name="user_phone1" class="phone-mask" required placeholder="Ваш телефон *"> <!-- pattern="[0-9]{10,11}" -->
@@ -139,7 +187,7 @@
         </ul>
       </div>
       <div class="main-offer">
-        <h1>ЭТОЙ ОСЕНЬЮ МЫ ДАРИМ ВАМ СКИДКУ <!--<span>20</span>-->18% НА РАБОТУ МАСТЕРА</h1>
+        <h1>ЭТОЙ ЗИМОЙ МЫ ДАРИМ ВАМ СКИДКУ <!--<span>20</span>-->19% НА РАБОТУ МАСТЕРА</h1>
         <img src="img/600x600-1.jpg">
         <form action="/php/form2.php" method="post">
           <input type="tel" name="user_phone2" class="phone-mask" placeholder="Ваш телефон"> <!-- pattern="[0-9]{10,11}" -->
