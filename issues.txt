@@ -1,3 +1,7 @@
+- dark version (adaptation)
+- cookie
+
+
 navigation
 - change breadcrumb on dropdown menu hover
 - change nav-logo to up-arrow on hover
@@ -6,7 +10,10 @@ navigation
 - cart on click transformation (like hamburger)
 - open/close dropdowns animation
 
+
 index.html
+
+- hover off gallery items transition
 
 shop.html
 
