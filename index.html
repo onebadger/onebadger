@@ -151,11 +151,14 @@
       </div>
       
       <div class="call-me">
-        <form action="/php/form1.php" method="post">
-          <input type="tel" name="user_phone1" class="phone-mask" required placeholder="Ваш телефон *"> <!-- pattern="[0-9]{10,11}" -->
+        <p class="call-me-text">Оставьте ваши контактные данные и мы свяжется с вами для обсуждений деталей заказа</p>
+        <form class="form-call-me" action="/php/form1.php" method="post">
+          <input type="text" name="user_name1" class="user-name1" required placeholder="Ваше имя">
+          <input type="tel" name="user_phone1" class="phone-mask" required placeholder="Ваш телефон"> <!-- pattern="[0-9]{10,11}" -->
           <button type="submit">ПОЗВОНИТЕ МНЕ</button>
         </form>
       </div>
+      <div class="horizon"></div>
       <div class="profit section margin-x margin-y">
         <h3>КАК МЫ РАБОТАЕМ</h3>
         <ul>

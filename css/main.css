@@ -5,6 +5,11 @@
   src: url('../fonts/Wolfganger.otf');
 }
 
+@font-face {
+  font-family: 'pwscratchedfont';
+  src: url('../fonts/pwscratchedfont.medium.ttf');
+}
+
 
 /********** GENERAL RULES **********/
 
@@ -35,6 +40,12 @@ img {
 
 .svg {
   display: block;
+}
+
+.horizon {
+  border-bottom: 1px solid #ddd;
+  width: 80%;
+ margin: 0 auto;
 }
 
 
@@ -384,17 +395,17 @@ clear timeout for the purpouse ot user clicks to fasr
 .logo-box {
   text-align: center;
   padding: 15px 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .logo {
-  font-family: 'Wolfganger';
-  font-size: 3.4em;
+  font-family: 'pwscratchedfont';
+  font-size: 2.4em;
 }
 
 .logo-text {
-  margin-top: -13px;
-  letter-spacing: -0.6px;
+  margin-top: -8px;
+  letter-spacing: 1.2px;
 }
 
 
@@ -565,8 +576,9 @@ clear timeout for the purpouse ot user clicks to fasr
 
 .slider-col1 img:hover,
 .slider-col3 img:hover {
-  -webkit-transition: -webkit-transform 2.0s;
-  -webkit-transform: scale(1.03);
+  -webkit-transition: -webkit-transform 1.8s;
+  -webkit-transform: scale(1.05);
+  opacity: 0.8;
 }
 
 
@@ -599,10 +611,21 @@ clear timeout for the purpouse ot user clicks to fasr
 
 /********** CALL-ME FORM **********/
 
-.call-me {
-  margin: 50px 0 0;
+
+.call-me-text,
+.user-name1 {
+  display: none;
 }
 
+.call-me {
+/*  margin: 10px 0 0;*/
+}
+
+.form-call-me {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
 
 
 /********** PROFIT **********/
@@ -615,6 +638,7 @@ clear timeout for the purpouse ot user clicks to fasr
 .profit ul li {
   padding-bottom: 15px;
   padding-left: 35px;
+  padding-right: 15px;
   background-image: url('../img/ico-done.svg');
   background-repeat: no-repeat;
   background-size: 20px 20px;
