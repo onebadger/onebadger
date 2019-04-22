@@ -305,7 +305,7 @@
     max-width: 70%;
     font-size: 1.2em;
   }
-  
+
   .clients ul li:nth-child(3) {
     display: flex;
   }
@@ -373,7 +373,13 @@
     height: 20%;
   }
 
+  .profit ul li {
+    padding-right: 0px
+  }
 
+  .profit p {
+    font-size: 1.05em;
+  }
 
   .nav-logo img {
     width: 27px;
@@ -386,8 +392,9 @@
   }
 
   .call-me {
-    margin-top: 30px;
+    margin: 60px 0 20px;
   }
+
 
   .form-call-me {
     margin-bottom: 40px
@@ -395,11 +402,19 @@
 
   .call-me-text {
     max-width: 65%;
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
-  
+
   .clients ul li:nth-child(1),
   .clients ul li:nth-child(2) {
     margin-right: 25px;
+  }
+
+  .main-offer {
+    padding: 60px
+  }
+
+  .thanks h1 {
+    margin: 60px 0 0;
   }
 }

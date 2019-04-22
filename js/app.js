@@ -136,7 +136,7 @@ var schmList = [
 var cssBreakpoint = $('.js-media');
 
 // phone mask
-$('.phone-mask').mask('(999) 999-9999');
+$('.phone-mask').mask('+7(999) 999-9999');
 
 // animated nav dropdown button & cart dropdown button
 var dropdownToggle = false;

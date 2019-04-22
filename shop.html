@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex,nofollow">
-    <title>Badger wood workshop</title>
-    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Arsenal:400,700|Fira+Sans:400,500,700|Istok+Web:400,700|Open+Sans+Condensed:300,700|Roboto+Condensed:400,700|Roboto:400,500,700|Ubuntu+Condensed|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/forms.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
-    
-  </head>
-  <body>
-    <div class="nav-wrapper js-shop">
-      <div class="nav-top">
-        <div class="dropdown">
-          <div id="hamburger" class="svg dropdown-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div id="dropdown-menu" class="dropdown-content dropdown-item">
-            <a href="index.html" class="link">ГЛАВНАЯ</a>
-            <a href="shop.html" class="link selected">МАГАЗИН</a>
-            <a href="workshop.html" class="link">МАСТЕРСКАЯ</a>
-            <a href="services.html" class="link">УСЛУГИ</a>
-            <a href="contacts.html" class="link">КОНТАКТЫ</a>
-            <!--<a href="#">FAQ - ВОПРОСЫ</a>-->
-            <!--<a href="#">КОРЗИНА</a>-->
-          </div>
-          <div id="navigation">
-            <div class="nav-logo">
-              <img src="img/badger.svg" class="svg">
-            </div>
-            <ul>
-              <li><p><a href="index.html">ГЛАВНАЯ</a></p></li>
-              <li><p class="selected"><a href="shop.html">МАГАЗИН</a></p></li>
-              <li><p><a href="workshop.html">МАСТЕРСКАЯ</a></p></li>
-              <li><p><a href="services.html">УСЛУГИ</a></p></li>
-              <li><p><a href="contacts.html">КОНТАКТЫ</a></p></li>
-            </ul>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Badger wood workshop</title>
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Arsenal:400,700|Fira+Sans:400,500,700|Istok+Web:400,700|Open+Sans+Condensed:300,700|Roboto+Condensed:400,700|Roboto:400,500,700|Ubuntu+Condensed|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/forms.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+</head>
+
+<body>
+  <div class="nav-wrapper js-shop">
+    <div class="nav-top">
+      <div class="dropdown">
+        <div id="hamburger" class="svg dropdown-btn">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="breadcrumb">
-          <p class="text-500">МАГАЗИН</p>
+        <div id="dropdown-menu" class="dropdown-content dropdown-item">
+          <a href="index.html" class="link">ГЛАВНАЯ</a>
+          <a href="shop.html" class="link selected">МАГАЗИН</a>
+          <a href="workshop.html" class="link">МАСТЕРСКАЯ</a>
+          <a href="services.html" class="link">УСЛУГИ</a>
+          <a href="contacts.html" class="link">КОНТАКТЫ</a>
+          <!--<a href="#">FAQ - ВОПРОСЫ</a>-->
+          <!--<a href="#">КОРЗИНА</a>-->
         </div>
-        <div class="cart">
-          <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
-          <div id="dropdown-cart" class="cart-content dropdown-item">
-            <p class="text text-500">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="contacts.html">КОНТАКТЫ</a></p>
-            <br>
-  <!--
+        <div id="navigation">
+          <div class="nav-logo">
+            <img src="img/badger.svg" class="svg">
+          </div>
+          <ul>
+            <li>
+              <p><a href="index.html">ГЛАВНАЯ</a></p>
+            </li>
+            <li>
+              <p class="selected"><a href="shop.html">МАГАЗИН</a></p>
+            </li>
+            <li>
+              <p><a href="workshop.html">МАСТЕРСКАЯ</a></p>
+            </li>
+            <li>
+              <p><a href="services.html">УСЛУГИ</a></p>
+            </li>
+            <li>
+              <p><a href="contacts.html">КОНТАКТЫ</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="breadcrumb">
+        <p class="text-500">МАГАЗИН</p>
+      </div>
+      <div class="cart">
+        <img src="img/ico-cart.svg" id="cart-icon" class="svg cart-btn">
+        <div id="dropdown-cart" class="cart-content dropdown-item">
+          <p class="text text-500">Для заказа изделия воспользуйтесь, пожалуйста, формой обратной связи в разделе <a href="contacts.html">КОНТАКТЫ</a></p>
+          <br>
+          <!--
             <table>
               <tr>
                 <td>1.</td>
@@ -71,120 +81,121 @@
             </table>
             <h4>Оформить заказ</h4>
   -->
-            <p class="text">Корзина покупок в процессе доработки. Приносим извинения за возможные неудобства.</p>
-            <div class="cart-emoji"><img src="img/emoji/1f3ff.png"></div>
-          </div>
-        </div>
-        <div class="phone">
-          <p class="phone-time">с 11:00 до 17:00</p>
-          <p class="phone-number"><a href="tel:+79269269699">8(926)9269699</a></p>
-        </div>
-      </div> <!-- /.nav-top -->
-    </div> <!-- /.nav-wrapper -->
-    <div class="wrapper">
-      <div class="header">
-        <div class="logo-box">
-          <div class="logo"><a href="index.html">onebadger</a></div>
-          <div class="logo-text">мастерская декора из дерева</div>
-        </div>
-        <div class="nav-main">
-          <ul>
-            <li>главная</li>
-            <li>магазин</li>
-            <li>мастерская</li>
-            <li>услуги</li>
-            <li>контакты</li>
-          </ul>
-        </div>
-      </div> <!-- /.header -->
-      
-      <div class="section-text">
-        <p class="margin-x">Все изделия представленные в этом разделе - наши любимые.  они выполнены не один раз.  технология их производства отработана. скорость выполнения заказа минимальная. </p>
-      </div>
-      
-      <div class="select-wrapper">
-        <p class="enlarged text-500">Выберите категорию товаров:</p>
-        <div class="select-box">
-          <select class="select-goods">
-            <optgroup label="популярное">
-              <option selected value="popular">ПОПУЛЯРНЫЕ ТОВАРЫ</option>
-              <option value="souvenirs">СУВЕНИРЫ</option>
-            </optgroup>
-            <optgroup label="события">
-              <option value="glans">ВЕНЧАНИЕ</option>
-              <option value="new-year">НОВЫЙ ГОД</option>
-              <option value="wedding">СВАДЬБА</option>
-            </optgroup>
-            <optgroup label="категории">
-              <option value="children">ДЕТЯМ</option>
-              <option value="interrior">ИНТЕРЬЕР</option>
-              <option value="furniture">МЕБЕЛЬ</option>
-              <option value="sea">МОРЕ</option>
-              <option value="volumetric-letter">ОБЪЕМНЫЕ БУКВЫ</option>
-              <option value="light">ОСВЕЩЕНИЕ</option>
-              <option value="presents">ПОДАРКИ</option>
-              <option value="flowers">ФЛОРИСТАМ</option>
-              <option value="storage">ХРАНЕНИЕ</option>
-            </optgroup>
-          </select>
+          <p class="text">Корзина покупок в процессе доработки. Приносим извинения за возможные неудобства.</p>
+          <div class="cart-emoji"><img src="img/emoji/1f3ff.png"></div>
         </div>
       </div>
-      
-      <div id="shop-slider" class="gallery">
-        <img id="shop-arr-left" class="arrow arrow-left" src="img/arrow-left.svg">
-        <img id="shop-arr-right" class="arrow arrow-right" src="img/arrow-right.svg">
-        <img id="shop-img" class="gallery-img">
-        <p id="shop-text" class="gallery-text"></p>
-        <div class="preview-cart"><img src="img/ico-cart-white.svg"></div>
-        <div class="preview-info"><img src="img/ico-info.svg"></div>
+      <div class="phone">
+        <p class="phone-time">с 11:00 до 17:00</p>
+        <p class="phone-number"><a href="tel:+79269269699">8(926)9269699</a></p>
       </div>
-      
-      <div class="other-goods">
-        <h2>ДРУГИЕ ТОВАРЫ</h2>
-        
-        <div id="other-goods-slider" class="gallery">
-          <img id="other-arr-left" class="arrow arrow-left" src="img/arrow-left.svg">
-          <img id="other-arr-right" class="arrow arrow-right" src="img/arrow-right.svg">
-          <img id="other-img" class="gallery-img">
-          <p id="other-text" class="gallery-text"></p>
-        </div>
-        
+    </div> <!-- /.nav-top -->
+  </div> <!-- /.nav-wrapper -->
+  <div class="wrapper">
+    <div class="header">
+      <div class="logo-box">
+        <div class="logo"><a href="index.html">onebadger</a></div>
+        <div class="logo-text">мастерская декора из дерева</div>
       </div>
-      
-      <div class="main-offer">
-        <h1>ЗНАЕТЕ КАК СДЕЛАТЬ ЭТО ИНТЕРЕСНЕЕ?</h1>
-        <p>ОПИШИТЕ СВОИ ПОЖЕЛАНИЯ И МЫ РАСЧИТАЕМ ВАШ ИНДИВИДУАЛЬНЫЙ ПРОЕКТ</p>
-        <img src="img/600x600-1.jpg">
-        <form action="/php/form2.php" method="post">
-          <input type="tel" id="phone2" name="user_phone2" pattern="[0-9]{10,11}" placeholder="Ваш телефон">
-          <input type="email" id="email2" name="user_email2" required placeholder="Ваш e-mail *">
-          <input type="text" id="name2" name="user_name2" placeholder="Ваше имя">
-          <textarea placeholder="Описание"></textarea>
-          <button type="submit">ПОЛУЧИТЬ ПРОЕКТ</button>
-        </form>
+      <div class="nav-main">
+        <ul>
+          <li>главная</li>
+          <li>магазин</li>
+          <li>мастерская</li>
+          <li>услуги</li>
+          <li>контакты</li>
+        </ul>
       </div>
-      
+    </div> <!-- /.header -->
 
-    </div> <!-- /.wrapper -->
-    <hr>
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/onebadger/" target="_blank"><img class="ico-instagram" src="img/ico-instagram.svg"></a>
+    <div class="section-text">
+      <p class="margin-x">Все изделия представленные в этом разделе - наши любимые. они выполнены не один раз. технология их производства отработана. скорость выполнения заказа минимальная. </p>
+    </div>
+
+    <div class="select-wrapper">
+      <p class="enlarged text-500">Выберите категорию товаров:</p>
+      <div class="select-box">
+        <select class="select-goods">
+          <optgroup label="популярное">
+            <option selected value="popular">ПОПУЛЯРНЫЕ ТОВАРЫ</option>
+            <option value="souvenirs">СУВЕНИРЫ</option>
+          </optgroup>
+          <optgroup label="события">
+            <option value="glans">ВЕНЧАНИЕ</option>
+            <option value="new-year">НОВЫЙ ГОД</option>
+            <option value="wedding">СВАДЬБА</option>
+          </optgroup>
+          <optgroup label="категории">
+            <option value="children">ДЕТЯМ</option>
+            <option value="interrior">ИНТЕРЬЕР</option>
+            <option value="furniture">МЕБЕЛЬ</option>
+            <option value="sea">МОРЕ</option>
+            <option value="volumetric-letter">ОБЪЕМНЫЕ БУКВЫ</option>
+            <option value="light">ОСВЕЩЕНИЕ</option>
+            <option value="presents">ПОДАРКИ</option>
+            <option value="flowers">ФЛОРИСТАМ</option>
+            <option value="storage">ХРАНЕНИЕ</option>
+          </optgroup>
+        </select>
       </div>
-      <div class="nav-footer"></div>
-      <div class="footer-contacts">
-        <p class="footer-phone"><a href="tel:+79269269699">8(926)926-9699</a></p>
-        <p class="footer-messengers">- Telegram WhatsApp iMessage -</p>
-        <p class="enlarged footer-mail"><a href="mailto:on.badger@gmail.com">on.badger@gmail.com</a></p>
-        <p class="enlarged footer-address"><a href="#">Электрозаводская, 21</a></p>
+    </div>
+
+    <div id="shop-slider" class="gallery">
+      <img id="shop-arr-left" class="arrow arrow-left" src="img/arrow-left.svg">
+      <img id="shop-arr-right" class="arrow arrow-right" src="img/arrow-right.svg">
+      <img id="shop-img" class="gallery-img">
+      <p id="shop-text" class="gallery-text"></p>
+      <div class="preview-cart"><img src="img/ico-cart-white.svg"></div>
+      <div class="preview-info"><img src="img/ico-info.svg"></div>
+    </div>
+
+    <div class="other-goods">
+      <h2>ДРУГИЕ ТОВАРЫ</h2>
+
+      <div id="other-goods-slider" class="gallery">
+        <img id="other-arr-left" class="arrow arrow-left" src="img/arrow-left.svg">
+        <img id="other-arr-right" class="arrow arrow-right" src="img/arrow-right.svg">
+        <img id="other-img" class="gallery-img">
+        <p id="other-text" class="gallery-text"></p>
       </div>
-      <div class="copyright">&copy; 2017 копирование и публикация со сылкой на badger.one</div>
-      <div class="developer">дизайн и разработка <a href="mailto:yakov.barsukov@gmail.com">onebadger</a></div>
-    </footer>
-    
-    <script src="js/portfolioList.js"></script>
-    <script src="js/shopList.js"></script>
-    <script src="js/schmList.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+    </div>
+
+    <div class="main-offer">
+      <h1>ЗНАЕТЕ КАК СДЕЛАТЬ ЭТО ИНТЕРЕСНЕЕ?</h1>
+      <p>ОПИШИТЕ СВОИ ПОЖЕЛАНИЯ И МЫ РАСЧИТАЕМ ВАШ ИНДИВИДУАЛЬНЫЙ ПРОЕКТ</p>
+      <img src="img/600x600-1.jpg">
+      <form action="/php/form2.php" method="post">
+        <input type="tel" id="phone2" name="user_phone2" pattern="[0-9]{10,11}" placeholder="Ваш телефон">
+        <input type="email" id="email2" name="user_email2" required placeholder="Ваш e-mail *">
+        <input type="text" id="name2" name="user_name2" placeholder="Ваше имя">
+        <textarea placeholder="Описание"></textarea>
+        <button type="submit">ПОЛУЧИТЬ ПРОЕКТ</button>
+      </form>
+    </div>
+
+
+  </div> <!-- /.wrapper -->
+  <hr>
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/onebadger/" target="_blank"><img class="ico-instagram" src="img/ico-instagram.svg"></a>
+    </div>
+    <div class="nav-footer"></div>
+    <div class="footer-contacts">
+      <p class="footer-phone"><a href="tel:+79269269699">8(926)926-9699</a></p>
+      <p class="footer-messengers">- Telegram WhatsApp iMessage -</p>
+      <p class="enlarged footer-mail"><a href="mailto:on.badger@gmail.com">on.badger@gmail.com</a></p>
+      <p class="enlarged footer-address"><a href="#">Электрозаводская, 21</a></p>
+    </div>
+    <div class="copyright">&copy; 2017 копирование и публикация со сылкой на badger.one</div>
+    <div class="developer">дизайн и разработка <a href="mailto:yakov.barsukov@gmail.com">onebadger</a></div>
+  </footer>
+
+  <script src="js/portfolioList.js"></script>
+  <script src="js/shopList.js"></script>
+  <script src="js/schmList.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
