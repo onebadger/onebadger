@@ -33,7 +33,7 @@
     flex-grow: 0;
   }
 
-  .item-text {
+  .item-text-box {
     display: flex;
     position: absolute;
     bottom: 0;
@@ -85,11 +85,11 @@
 
 
 
-  .item-text {
+  .item-text-box {
     height: 20%
   }
 
-  .item-text p {
+  .item-text-box p {
     font-size: 0.9em;
   }
 
@@ -131,8 +131,8 @@
     letter-spacing: 1.0px;
   }
 
-  #gallery-arr-left,
-  #gallery-arr-right {
+  #portfolio-arr-left,
+  #portfolio-arr-right {
     display: none;
     /*    opacity: 0;*/
   }
@@ -146,11 +146,11 @@
     flex-basis: 50%;
   }
 
-  .item-text {
+  .item-text-box {
     height: 30%
   }
 
-  .item-text p {
+  .item-text-box p {
     font-size: 0.8em;
   }
 
@@ -198,11 +198,11 @@
     flex-grow: 5;
   }
 
-  .item-text {
+  .item-text-box {
     height: 25%
   }
 
-  .item-text p {
+  .item-text-box p {
     font-size: 0.85em;
   }
 
@@ -293,11 +293,11 @@
 
 
 
-  .item-text {
+  .item-text-box {
     height: 20%
   }
 
-  .item-text p {
+  .item-text-box p {
     font-size: 0.9em;
   }
 
@@ -369,7 +369,7 @@
     position: relative;
   }
 
-  .item-text {
+  .item-text-box {
     height: 20%;
   }
 

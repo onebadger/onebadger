@@ -548,11 +548,11 @@ clear timeout for the purpouse ot user clicks to fasr
 
 }
 
-.item-text {
+.item-text-box {
   display: none
 }
 
-.item-text p {
+.item-text-box p {
   align-self: center;
   padding: 0 15px;
   font-size: 0.85em;
