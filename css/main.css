@@ -427,12 +427,6 @@ clear timeout for the purpouse ot user clicks to fasr
 
 /********** GALLERY **********/
 
-
-.shop-gallery {
-  position: relative;
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.45);
-}
-
 .arrow {
   position: absolute;
   width: 40px;
@@ -452,21 +446,6 @@ clear timeout for the purpouse ot user clicks to fasr
 .shop-arrow-right {
   top: calc(50% - 35px);
   right: 2%;
-}
-
-.gallery img,
-.shop-gallery img {
-  display: block;
-}
-
-.gallery p,
-.shop-gallery p {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  padding: 20px 10px;
-  background-color: rgba(0, 0, 0, .5);
-  color: rgba(255, 255, 255, .8);
 }
 
 .preview-cart {
@@ -871,98 +850,52 @@ social-icons a:hover {
 /******************** PAGE ********************/
 /* shop.html */
 
-.section-text {
-  text-align: center;
-}
-
-.select-wrapper {
+.shop-gallery {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
 }
 
-.select-wrapper p {
-  align-self: center;
-  padding: 30px 0 15px;
-}
-
-.select-box {
-  align-self: center;
-
-  background: url(../img/select-arrow-open.png) no-repeat right center;
-  /* 96% 0 */
-  height: 30px;
-  width: 310px;
-  overflow: hidden;
-  background-color: #eee;
-
-  /*  text-align: center;*/
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.select-box select {
-  background: transparent;
-  border: none;
-  /*   height: 29px;*/
-  padding: 5px;
-  /* If you add too much padding here, the options won't show in IE */
-  width: 320px;
-
-  /*  border: 1px solid #ccc;*/
-  /*  border-radius: 14px;*/
-  font-size: 21px;
-  height: 33px;
-  color: #222;
-  margin-left: 10px;
-
-}
-
-
-
-.select_box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-}
-
-.tags select {
-  /*height: 50px*/
-}
-
-
-
-
-
-.tags {
-  background: url('../img/arrow-down.svg') no-repeat 80% 50%;
-  background-size: 30px 30px;
-  background-color: red;
-  height: 46px;
-  overflow: hidden;
-  /*  max-width: 10%;*/
-}
-
-
-.tags select {
-  border: none;
-  color: #fff;
-  background: transparent;
-  /*  font-size: 1.1em;*/
-  /*  font-weight: bold;*/
-  /*  padding: 0px 10px 2px;*/
-  width: 30px;
-  height: 29px;
-  -webkit-appearance: none;
-}
-
-.other-goods h2 {
+.shop-gallery-item {
+  flex: 1 calc(100% - 10px);
   text-align: center;
-  margin-top: 40px
+  background-color: grey;
+/*  padding: 20px;*/
+  margin-bottom: 10px;
+  position: relative;
+  max-width: 393.3333px;
 }
 
+.shop-prew-img img {
+  display: block;
+  border-radius: 4px;
+}
 
+.shop-prev-info,
+.shop-prev-cart {
+  position: absolute;
+  max-width: 40px;
+  max-height: 40px;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 6px;
+  padding: 10px;
+}
 
+.shop-prev-info {
+  top: 10px;
+  right: 55px;
+}
+
+.shop-prev-cart {
+  top: 10px;
+  right: 10px;
+}
+
+.shop-prev-info img:hover,
+.shop-prev-cart img:hover {
+  transform: scale(1.1);
+}
 
 
 /******************** PAGE ********************/

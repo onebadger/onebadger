@@ -100,6 +100,14 @@
   .profit ul li {
     padding-right: 25px
   }
+  
+  .shop-gallery-item {
+    flex: 1 calc(50% - 10px);
+  }
+
+  .shop-gallery-item:nth-child(2n+1) {
+    margin-right: 10px;
+  }
 
 }
 
@@ -161,6 +169,16 @@
   .clients ul li:nth-child(1) {
     margin-right: 15px;
   }
+
+/*
+  .shop-gallery-item {
+    flex: 1 calc(50% - 10px);
+  }
+
+  .shop-gallery-item:nth-child(2n+1) {
+    margin-right: 10px;
+  }
+*/
 }
 
 /*
@@ -314,7 +332,18 @@
     margin-right: 15px;
   }
 
+  .shop-gallery-item {
+    flex: 1 calc(33.3333% - 10px);
+  }
 
+  .shop-gallery-item:nth-child(2n+1) {
+    margin-right: 0;
+  }
+
+  .shop-gallery-item:nth-child(3n-2),
+  .shop-gallery-item:nth-child(3n-1) {
+    margin-right: 10px;
+  }
 
 }
 
