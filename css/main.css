@@ -1,4 +1,15 @@
-/********** Web Fonts **********/
+/*
+
+##### ##### #   # #####  ###
+#     #   # ##  #   #   #   #
+#     #   # # # #   #   #
+###   #   # #  ##   #    ###
+#     #   # #   #   #       #
+#     #   # #   #   #   #   #
+#     ##### #   #   #    ###
+
+*/
+
 
 @font-face {
   font-family: 'Wolfganger';
@@ -11,7 +22,18 @@
 }
 
 
-/********** GENERAL RULES **********/
+
+/*
+
+ ###  ##### #   # ##### ####   ###  #       ####  #   # #     #####  ###
+#   # #     ##  # #     #   # #   # #       #   # #   # #     #     #   #
+#     #     # # # #     #   # #   # #       #   # #   # #     #     #
+#     ###   #  ## ###   ####  ##### #       ####  #   # #     ###    ###
+#  ## #     #   # #     #   # #   # #       #   # #   # #     #         #
+#   # #     #   # #     #   # #   # #       #   # #   # #     #     #   #
+ ###  ##### #   # ##### #   # #   # #####   #   #  #### ##### #####  ###  
+
+*/
 
 * {
   box-sizing: border-box;
@@ -51,7 +73,17 @@ img {
 
 
 
-/********** COMMON RULES **********/
+/*
+
+ ###   ###  #   # #   #  ###  #   #   ####  #   # #     #####  ###
+#   # #   # ## ## ## ## #   # ##  #   #   # #   # #     #     #   #
+#     #   # # # # # # # #   # # # #   #   # #   # #     #     #
+#     #   # #   # #   # #   # #  ##   ####  #   # #     ###    ###
+#     #   # #   # #   # #   # #   #   #   # #   # #     #         #
+#   # #   # #   # #   # #   # #   #   #   # #   # #     #     #   #
+ ###   ###  #   # #   #  ###  #   #   #   #  #### ##### #####  ###  
+
+*/
 
 .wrapper {
   margin: 0 auto;
@@ -114,9 +146,19 @@ margin-y {
 
 
 
+/*
 
-/******************** PAGE ********************/
-/* index.html */
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+index.html
+
+*/
 
 /********** NAV-TOP (fixed) **********/
 .nav-wrapper {
@@ -436,14 +478,12 @@ clear timeout for the purpouse ot user clicks to fasr
   cursor: pointer;
 }
 
-.arrow-left,
-.shop-arrow-left {
+.arrow-left {
   top: calc(50% - 20px);
   left: 2%;
 }
 
-.arrow-right,
-.shop-arrow-right {
+.arrow-right {
   top: calc(50% - 15px);
   right: 2%;
 }
@@ -639,6 +679,8 @@ clear timeout for the purpouse ot user clicks to fasr
   background-position: left top;
 }
 
+
+
 /********** CLIENTS **********/
 
 .clients {
@@ -694,11 +736,7 @@ clear timeout for the purpouse ot user clicks to fasr
 
 
 
-  
-
-
 /********** MAIN OFFER **********/
-
 
 .main-offer {
   text-align: center;
@@ -847,8 +885,28 @@ social-icons a:hover {
 }
 
 
-/******************** PAGE ********************/
-/* shop.html */
+
+/*
+
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+shop.html
+
+*/
+
+.shop-descr-txt {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0 40px;
+  text-align: center;
+/*  text-transform: uppercase;*/
+}
 
 .shop-gallery {
   display: flex;
@@ -911,9 +969,19 @@ social-icons a:hover {
 
 
 
+/*
 
-/******************** PAGE ********************/
-/* contacts.html */
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+contacts.html
+
+*/
 
 .contacts {
   text-align: center;
@@ -961,15 +1029,35 @@ social-icons a:hover {
 
 
 
-/******************** PAGE ********************/
-/* workshop.html */
+/*
+
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+workshop.html
+
+*/
 
 
 
-/******************** PAGE ********************/
-/* 404 error */
+/*
 
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
 
+404 error
+
+*/
 
 /* call-me forms */
 
