@@ -438,13 +438,13 @@ clear timeout for the purpouse ot user clicks to fasr
 
 .arrow-left,
 .shop-arrow-left {
-  top: calc(50% - 35px);
+  top: calc(50% - 20px);
   left: 2%;
 }
 
 .arrow-right,
 .shop-arrow-right {
-  top: calc(50% - 35px);
+  top: calc(50% - 15px);
   right: 2%;
 }
 
@@ -855,9 +855,11 @@ social-icons a:hover {
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
+  
 }
 
 .shop-gallery-item {
+  position: relative;
   flex: 1 calc(100% - 10px);
   text-align: center;
   background-color: grey;
@@ -865,6 +867,10 @@ social-icons a:hover {
   margin-bottom: 10px;
   position: relative;
   max-width: 393.3333px;
+}
+
+.shop-gallery > div:not(:first-child) {
+  display: none;
 }
 
 .shop-prew-img img {
@@ -892,10 +898,18 @@ social-icons a:hover {
   right: 10px;
 }
 
+.shop-prev-info img,
+.shop-prev-cart img {
+  transition: all .6s ease-in-out;
+}
+
 .shop-prev-info img:hover,
 .shop-prev-cart img:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
+
+
 
 
 /******************** PAGE ********************/

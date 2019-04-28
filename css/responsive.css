@@ -43,10 +43,7 @@
     color: rgba(255, 255, 255, .9);
   }
 
-
-
 }
-
 
 /*
 
@@ -58,9 +55,6 @@
    # #### #### ### # #
                #
 */
-
-
-
 
 @media (min-width: 450px) {
 
@@ -100,7 +94,16 @@
   .profit ul li {
     padding-right: 25px
   }
+
+  .shop-gallery > div:not(:first-child) {
+    display: block;
+  }
   
+  #shop-arr-left,
+  #shop-arr-right {
+    display: none;
+  }
+
   .shop-gallery-item {
     flex: 1 calc(50% - 10px);
   }
@@ -170,7 +173,7 @@
     margin-right: 15px;
   }
 
-/*
+  /*
   .shop-gallery-item {
     flex: 1 calc(50% - 10px);
   }
