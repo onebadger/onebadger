@@ -222,14 +222,18 @@ var currentIndex = 0;
 function galleryLoader (list) {
   $('.item-img').attr('src', list[currentIndex].image);
   $('.item-text').text(list[currentIndex].info);
-  console.log(2);
+}
+
+// shop img loader
+function shopImgLoader (list) {
+  $('.shop-prew-img').attr('src', list[currentIndex].image);
 }
 
 // gallery left/right click
 function galleryClick (list) {
   var lastIndex = list.length - 1;
   
-  $('.portfolio-arr-right').click(function(event) {
+  $('.slider-arr-right').click(function(event) {
     event.preventDefault();
     if (currentIndex == lastIndex) {
       currentIndex = 0;
@@ -240,7 +244,7 @@ function galleryClick (list) {
     }      
   });
   
-  $('.portfolio-arr-left').click(function(event) {
+  $('.slider-arr-left').click(function(event) {
     event.preventDefault();
     if (currentIndex == 0) {
       currentIndex = lastIndex;
@@ -267,107 +271,9 @@ if ($('.js-index').length) {
 // shop.html block
 if ($('.js-shop').length) {
   
-  // shop lists sliders
-
-  var $selectedGoodsValue = $('.select-goods option:selected').val();
-  var $selector = $('.select-goods');
-  var shopTaggedList = [];
-  var shopNotTaggedList = [];
-  var shopListLength = shopList.length;
-  var shopCurrentIndex = 0;
-  var otherCurrentIndex = 0;
-  var shopLastIndex;
-  var otherLastIndex;
-
-  function shopListLoader () {
-    $('#shop-img').attr('src', shopTaggedList[shopCurrentIndex].image);
-    $('#shop-text').text(shopTaggedList[shopCurrentIndex].info);
-  }
-
-  function otherListLoader () {
-    $('#other-img').attr('src', shopNotTaggedList[otherCurrentIndex].image);
-    $('#other-text').text(shopNotTaggedList[otherCurrentIndex].info);
-  }
-
-  function getShopLists () {
-    shopTaggedList = [];
-    shopNotTaggedList = [];
-    for (var i = 0; i < shopListLength; i++) {
-      if (shopList[i].tags.includes($selectedGoodsValue)) {
-        shopTaggedList.push(shopList[i]);
-      } else {
-        shopNotTaggedList.push(shopList[i]);
-      }
-    }
-    shopCurrentIndex = 0;
-    otherCurrentIndex = 0;
-    shopLastIndex = shopTaggedList.length - 1;
-    otherLastIndex = shopNotTaggedList.length - 1;
-    return [shopTaggedList, shopNotTaggedList];
-  }
-
-  getShopLists();
-  shopListLoader();
-  otherListLoader();
-
-  $selector.on('change', function () {
-    $selectedGoodsValue = $('.select-goods option:selected').val();
-    getShopLists();
-    shopListLoader();
-    otherListLoader();
-  });
-
-  function shopListClick () {
-
-    $('#shop-arr-right').click(function(event) {
-      event.preventDefault();
-      if (shopCurrentIndex === shopLastIndex) {
-        shopCurrentIndex = 0;
-        shopListLoader();
-      } else {
-        shopCurrentIndex += 1;
-        shopListLoader();
-      }
-    });
-
-    $('#shop-arr-left').click(function(event) {
-      event.preventDefault();
-      if (shopCurrentIndex == 0) {
-        shopCurrentIndex = shopLastIndex;
-        shopListLoader();
-      } else {
-        shopCurrentIndex -= 1;
-        shopListLoader();
-      }
-    });
-  }
-  shopListClick();
-
-  function otherListClick () {
-
-    $('#other-arr-right').click(function(event) {
-      event.preventDefault();
-      if (otherCurrentIndex === otherLastIndex) {
-        otherCurrentIndex = 0;
-        otherListLoader();
-      } else {
-        otherCurrentIndex += 1;
-        otherListLoader();
-      }
-    });
-
-    $('#other-arr-left').click(function(event) {
-      event.preventDefault();
-      if (otherCurrentIndex == 0) {
-        otherCurrentIndex = otherLastIndex;
-        otherListLoader();
-      } else {
-        otherCurrentIndex -= 1;
-        otherListLoader();
-      }
-    });
-  }
-  otherListClick();
+  galleryLoader(portfolioList);
+  galleryClick(portfolioList);
+ 
   
 } // /.js-shop block
 

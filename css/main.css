@@ -946,6 +946,26 @@ shop.html
   padding: 10px;
 }
 
+.shop-prev-price {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  width: 100px;
+  height: 40px;
+  background-color: rgba(0,0,0,.4);
+  border-radius: 6px;
+  top: 10px;
+  right: 100px;
+  color: #ddd;
+  font-size: 20px;   
+}
+
+.shop-prev-price p {
+  
+}
+
 .shop-prev-info {
   top: 10px;
   right: 55px;
