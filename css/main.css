@@ -144,6 +144,17 @@ margin-y {
   padding-bottom: 20px;
 }
 
+.section-descr-txt {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+.section-descr-txt h2 {
+  padding-bottom: 10px
+}
+
 
 
 /*
@@ -384,6 +395,11 @@ clear timeout for the purpouse ot user clicks to fasr
 }
 
 /***** cart *****/
+
+
+#dropdown-cart p a {
+  text-decoration: underline !important;
+}
 
 .cart-content {
   display: none;
@@ -644,9 +660,7 @@ clear timeout for the purpouse ot user clicks to fasr
   display: none;
 }
 
-.call-me {
-  
-}
+.call-me {}
 
 .form-call-me {
   display: flex;
@@ -684,7 +698,8 @@ clear timeout for the purpouse ot user clicks to fasr
 /********** CLIENTS **********/
 
 .clients {
-  margin: ; /*check mobile margins*/
+  margin: ;
+  /*check mobile margins*/
 }
 
 .clients ul {
@@ -699,7 +714,7 @@ clear timeout for the purpouse ot user clicks to fasr
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.45);
   color: #fff;
   padding: 25px;
-  
+
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -708,7 +723,7 @@ clear timeout for the purpouse ot user clicks to fasr
 
 .clients ul li:nth-child(1),
 .clients ul li:nth-child(2) {
-/*  margin-right: 25px;*/
+  /*  margin-right: 25px;*/
 }
 
 .clients ul li:nth-child(2),
@@ -723,7 +738,7 @@ clear timeout for the purpouse ot user clicks to fasr
   border-radius: 50%;
   margin: 10px;
   padding: 15px;
-/*  align-self: center*/
+  /*  align-self: center*/
 }
 
 .clients ul li p {
@@ -764,7 +779,7 @@ clear timeout for the purpouse ot user clicks to fasr
 
 .internal-links {
   text-align: center;
-/*  margin-top: 40px;*/
+  /*  margin-top: 40px;*/
   letter-spacing: 0.2px;
   max-width: 600px;
   margin: 40px auto 0;
@@ -900,20 +915,11 @@ shop.html
 
 */
 
-.shop-descr-txt {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 10px 0 40px;
-  text-align: center;
-/*  text-transform: uppercase;*/
-}
-
 .shop-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 20px;
-  
 }
 
 .shop-gallery-item {
@@ -921,7 +927,7 @@ shop.html
   flex: 1 calc(100% - 10px);
   text-align: center;
   background-color: grey;
-/*  padding: 20px;*/
+  /*  padding: 20px;*/
   margin-bottom: 10px;
   position: relative;
   max-width: 393.3333px;
@@ -941,7 +947,7 @@ shop.html
   position: absolute;
   max-width: 40px;
   max-height: 40px;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, .4);
   border-radius: 6px;
   padding: 10px;
 }
@@ -954,17 +960,15 @@ shop.html
   line-height: normal;
   width: 100px;
   height: 40px;
-  background-color: rgba(0,0,0,.4);
+  background-color: rgba(0, 0, 0, .4);
   border-radius: 6px;
   top: 10px;
   right: 100px;
   color: #ddd;
-  font-size: 20px;   
+  font-size: 20px;
 }
 
-.shop-prev-price p {
-  
-}
+.shop-prev-price p {}
 
 .shop-prev-info {
   top: 10px;
@@ -1062,6 +1066,33 @@ contacts.html
 workshop.html
 
 */
+
+
+
+/*
+
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+services.html
+
+*/
+
+.service-list {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  
+}
+
+.service-list h4 {
+  padding: 20px 0 5px 40px;
+}
 
 
 

@@ -95,10 +95,14 @@
     padding-right: 25px
   }
 
+  .shop-descr-txt {
+    padding-bottom: 30px;
+  }
+
   .shop-gallery > div:not(:first-child) {
     display: block;
   }
-  
+
   #shop-arr-left,
   #shop-arr-right {
     display: none;
@@ -333,6 +337,10 @@
 
   .clients ul li:nth-child(2) {
     margin-right: 15px;
+  }
+  
+  .shop-descr-txt {
+    padding-bottom: 40px;
   }
 
   .shop-gallery-item {
