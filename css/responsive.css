@@ -177,15 +177,13 @@
     margin-right: 15px;
   }
 
-  /*
-  .shop-gallery-item {
-    flex: 1 calc(50% - 10px);
+  .service-list li {
+    flex-direction: row;
   }
 
-  .shop-gallery-item:nth-child(2n+1) {
-    margin-right: 10px;
+  .service-list li div:first-child {
+    margin-right: 30px;
   }
-*/
 }
 
 /*
@@ -271,7 +269,6 @@
     /*    align-items: center;*/
     /*    align-content: center;*/
   }
-
 }
 
 /*
@@ -338,7 +335,7 @@
   .clients ul li:nth-child(2) {
     margin-right: 15px;
   }
-  
+
   .shop-descr-txt {
     padding-bottom: 40px;
   }

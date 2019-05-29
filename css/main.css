@@ -85,13 +85,21 @@ img {
 
 */
 
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 266px);
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
   /* 500px - mobile width imitation / 1000px */
+/*
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 266px);
+*/
+/*  min-height: calc(100vh - 266px);*/
   /* sticky footer */
 }
 
@@ -155,6 +163,9 @@ margin-y {
   padding-bottom: 10px
 }
 
+.svg-icon {
+  max-width: 100px
+}
 
 
 /*
@@ -919,7 +930,7 @@ shop.html
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 20px 80px;
 }
 
 .shop-gallery-item {
@@ -993,6 +1004,83 @@ shop.html
 
 
 
+
+/*
+
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+workshop.html
+
+*/
+
+
+
+/*
+
+####   ###   ###  #####
+#   # #   # #   # #
+#   # #   # #     # 
+####  ##### #     ###
+#     #   # #  ## #
+#     #   # #   # # 
+#     #   #  ###  #####
+
+services.html
+
+*/
+
+.section-services {
+  padding: 0 20px;
+}
+
+.service-list {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  list-style: none;
+}
+
+.service-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.service-list li div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  margin: 15px 0;
+  min-width: 150px;
+  background-color: rgba(0, 0, 0, .04);
+  border-radius: 30% 40% / 50% 30%;;
+}
+
+.service-list h4 {
+  padding-top: 5px;
+}
+
+.svg-point {
+  width: 30px;
+}
+
+.svg-track {
+  width: 50px
+}
+
+.svg-gift {
+  width: 45px;
+}
+
+
+
 /*
 
 ####   ###   ###  #####
@@ -1043,55 +1131,24 @@ contacts.html
 
 .contact-form {
   text-align: center;
-  margin-top: 20px;
+  
+  margin-top: 60px;
   padding: 20px 10px;
   /*  background-color: rgb(180,180,180);*/
   /*  background: linear-gradient(#56a03c 60%, #b7f1a3);*/
-  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0,0,0,.02);
   color: #000;
 }
 
-
-
-/*
-
-####   ###   ###  #####
-#   # #   # #   # #
-#   # #   # #     # 
-####  ##### #     ###
-#     #   # #  ## #
-#     #   # #   # # 
-#     #   #  ###  #####
-
-workshop.html
-
-*/
-
-
-
-/*
-
-####   ###   ###  #####
-#   # #   # #   # #
-#   # #   # #     # 
-####  ##### #     ###
-#     #   # #  ## #
-#     #   # #   # # 
-#     #   #  ###  #####
-
-services.html
-
-*/
-
-.service-list {
-  max-width: 600px;
-  margin: 0 auto;
-  list-style: none;
-  
+.contact-form h1 {
+  text-transform: uppercase;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
-.service-list h4 {
-  padding: 20px 0 5px 40px;
+#map {
+  margin-bottom: 80px
 }
 
 
