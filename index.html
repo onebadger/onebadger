@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="all">
   <title>Badger wood workshop</title>
   <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Arsenal:400,700|Fira+Sans:400,500,700|Istok+Web:400,700|Open+Sans+Condensed:300,700|Roboto+Condensed:400,700|Roboto:400,500,700|Ubuntu+Condensed|Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -165,6 +165,8 @@
         <form class="form-call-me" action="/php/form1.php" method="post">
           <input type="text" name="user_name1" class="user-name1" placeholder="Ваше имя">
           <input type="tel" name="user_phone1" class="phone-mask" required placeholder="Ваш телефон"> <!-- pattern="[0-9]{10,11}" -->
+          
+          <input type="checkbox" id="policy"><label for="policy">Согласен с правилами</label>
           <button type="submit">ПОЗВОНИТЕ МНЕ</button>
         </form>
       </div>

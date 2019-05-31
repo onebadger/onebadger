@@ -1,3 +1,5 @@
+- alt to imgs
+
 - dark version (adaptation)
 - cookie
 
@@ -14,6 +16,7 @@ navigation
 index.html
 
 - hover off gallery items transition
+- check clients imgs height
 
 shop.html
 
